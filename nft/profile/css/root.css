@@ -1,0 +1,53 @@
+:root{
+    --gradient-main: linear-gradient(90deg, #2524FF 0%, #DC25F9 100%);
+    --gradient-main-straight: linear-gradient(0deg, #2524FF 0%, #DC25F9 100%);
+    --gradient-main-light: linear-gradient(90deg, #E758FE 0%, #706FFE 100%);
+    --gradient-main-light-straight: linear-gradient(0deg, #E758FE 0%, #706FFE 100%);
+    --first-color: #2524FF;
+    --second-color: #DC25F9;
+    --first-color-light: #706FFE;
+    --second-color-light: #E758FE;
+    --dark-box-shadow-color: rgba(0, 0, 0, 0.4);
+    --opposite-font-color: #FDFDFD;
+    --primary-font: 'Poppins', sans-serif;
+}
+body.light{
+    --body-color: #FDFDFD;
+    --font-color: #1E1E1E;
+    --lighter-color: #f9ccff;
+    --lightest-color: #fce6ff;
+    --font-color-gray: #4b4b4b;
+    --overlay: rgba(230, 230, 255, 0.8);
+    --input: rgb(204, 204, 255);
+    --box-shadow-color: rgba(0, 0, 0, 0.16);
+    --gradient-main-lighter: linear-gradient(90deg, #CACAFF 0%, #F8C9FF 100%);
+    --gradient-main-lighter-glass: linear-gradient(90deg, rgba(201, 201, 255, 0.7) 0%, rgba(248, 201, 255, 0.7) 100%);
+    --gradient-main-lighter-transparent: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, #CACAFF 50%, #F8C9FF 100%);
+    --gradient-main-lightest: linear-gradient(90deg, #E6E6FF 0%, #FCE6FF 100%);
+    --gradient-main-lightest-transparent: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, #e6e6ff 50%, #fce6ff 100%);
+    --gradient-main-lighter-straight: linear-gradient(0deg, #CACAFF 0%, #F8C9FF 100%);
+    --gradient-main-lighter-transparent-straight: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, #CACAFF 50%, #F8C9FF 100%);
+    --gradient-main-lightest-straight: linear-gradient(0deg, #E6E6FF 0%, #FCE6FF 100%);
+    --gradient-main-lightest-transparent-straight: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, #e6e6ff 50%, #fce6ff 100%);
+
+}
+body.dark{
+    --body-color: #222222;
+    --font-color: #FDFDFD;
+    --lighter-color: #302433;
+    --lightest-color: #312833;
+    --font-color-gray: #cbcbcb;
+    --overlay: rgba(46, 46, 51, 0.8);
+    --input: rgb(38, 38, 51);
+    --box-shadow-color: rgba(0, 0, 0, 0.32);
+    --gradient-main-lighter: linear-gradient(90deg, #2D2D40 0%, #3E2D40 100%);
+    --gradient-main-lighter-glass: linear-gradient(90deg, rgba(45, 45, 64, 0.7) 0%, rgba(62, 45, 64, 0.7) 100%);
+    --gradient-main-lighter-transparent: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, #2D2D40 50%, #3E2D40 100%);
+    --gradient-main-lightest: linear-gradient(90deg, #282833 0%, #322833 100%);
+    --gradient-main-lightest-transparent: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, #282833 50%, #312833 100%);
+    --gradient-main-lighter-straight: linear-gradient(0deg, #2D2D40 0%, #3E2D40 100%);
+    --gradient-main-lighter-transparent-straight: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, #2D2D40 50%, #3E2D40 100%);
+    --gradient-main-lightest-straight: linear-gradient(0deg, #282833 0%, #322833 100%);
+    --gradient-main-lightest-transparent-straight: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, #282833 50%, #312833 100%);
+
+}

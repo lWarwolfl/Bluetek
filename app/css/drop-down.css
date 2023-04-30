@@ -1,0 +1,172 @@
+.select_wrap{
+    width: 200px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    user-select: none;
+    z-index: 1000;
+}
+.select_wrap.top{
+    position: relative;
+    margin-right: 20px;
+    float: right;
+}
+.select_wrap.top .option .sign{
+    width: 30px;
+    height: 30px;
+}
+.select_wrap.top .default_option{
+    height: 50px;
+}
+.select_wrap.top .default_option:before{
+    top: 15px;
+}
+.option p{
+    height: 40px;
+}
+.select_wrap.top .option p{
+    height: 30px;
+    line-height: 30px;
+}
+.select_wrap .default_option{
+    height: 60px;
+    background-image: var(--gradient-main-lightest);
+    background-size: 210% 210%;
+    background-position: 100% 110%;
+    box-shadow: 0 2px 5px var(--box-shadow-color);
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+}
+.select_wrap .default_option:hover{
+    background-position: 30% 110%;
+    box-shadow: 0 5px 8px var(--box-shadow-color);
+}
+.select_wrap .default_option li{
+    padding: 10px 15px;
+    list-style: none;
+}
+.select_wrap .default_option:before{
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/svg/drop.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 200ms;
+}
+.select_wrap .select_ul{
+    position: absolute;
+    display: none;
+    top: 70px;
+    padding: 7px;
+    left: 0;
+    width: 100%;
+    background-image: var(--gradient-main-lightest);
+    box-shadow: 0 2px 5px var(--box-shadow-color);
+    border-radius: 20px;
+    transition: 300ms;
+    overflow: hidden;
+}
+
+.select_wrap .select_ul li{
+    list-style: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-bottom: 8px;
+    background-image: var(--gradient-main-lighter);
+    border-radius: 10px;
+    background-size: 210% 210%;
+    background-position: 100% 110%;
+    box-shadow: 0 2px 5px var(--box-shadow-color);
+}
+
+.select_wrap .select_ul li:first-child{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.select_wrap .select_ul li:last-child{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-bottom: 0;
+}
+
+.select_wrap .select_ul li:hover{
+    background-position: 30% 110%;
+    box-shadow: 0 5px 8px var(--box-shadow-color);
+}
+
+.select_wrap .option{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: var(--font-color);
+    font-family: var(--primary-font);
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.select_wrap .option .sign{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.select_wrap .option.eth .sign{
+    background-image: url("../img/svg/eth.svg");
+}
+
+.select_wrap .option.btc .sign{
+    background-image: url("../img/svg/btc.svg");
+}
+.select_wrap .option.usd .sign{
+    background-image: url("../img/svg/usd.svg");
+}
+
+.select_wrap .option.usdt .sign{
+    background-image: url("../img/svg/tether.svg");
+}
+.select_wrap .option.poly .sign{
+    background-image: url("../img/svg/polygon.svg");
+}
+.select_wrap .option.bnb .sign{
+    background-image: url("../img/svg/bnb.svg");
+}
+.select_wrap.active .default_option:before{
+    transform: rotate(-180deg);
+}
+
+@media screen and (max-width: 500px) {
+    .select_wrap.top{
+        margin-right: 0;
+        width: 80px;
+    }
+    .select_wrap.top .default_option{
+        width: 100%;
+        min-width: unset;
+    }
+    .select_wrap .default_option:before{
+        right: 13px;
+    }
+    .select_wrap.top .default_option li{
+        padding: 10px 8px;
+    }
+    .select_wrap.top .select_ul{
+        width: 100%;
+        min-width: 200px;
+        right: 0;
+        left: unset;
+    }
+    .select_wrap.top .default_option p{
+        display: none;
+    }
+}

@@ -1,0 +1,88 @@
+.box_4{
+    display:inline-block;
+}
+.switch_4{
+    margin: 0;
+}
+.input_wrapper{
+    width: 60px;
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+.input_wrapper input[type="checkbox"]{
+    width: 60px;
+    height: 30px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: var(--gradient-main);
+    background-size: 210% 210%;
+    background-position: 30% 105%;
+    box-shadow: 0 2px 5px var(--box-shadow-color);
+    border-radius: 15px;
+    position: relative;
+    outline: 0;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+}
+
+.input_wrapper input[type="checkbox"]:after{
+    position: absolute;
+    content: "";
+    top: 3px;
+    left: 4px;
+    width: 24px;
+    height: 24px;
+    background: #dfeaec;
+    z-index: 2;
+    border-radius: 17px;
+    -webkit-transition: all .35s;
+    transition: all .35s;
+}
+
+.input_wrapper svg{
+    position: absolute;
+    top: 50%;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    fill: #fff;
+    -webkit-transition: all .35s;
+    transition: all .35s;
+    z-index: 1;
+}
+
+.input_wrapper .is_checked{
+    width: 15px;
+    left: 23%;
+    -webkit-transform: translateX(190%) translateY(-45%) scale(0);
+    transform: translateX(190%) translateY(-45%) scale(0);
+}
+
+.input_wrapper .is_unchecked{
+    width: 12px;
+    right: 15%;
+    -webkit-transform: translateX(0) translateY(-45%) scale(1);
+    transform: translateX(0) translateY(-45%) scale(1);
+}
+
+/* Checked State */
+.input_wrapper input[type="checkbox"]:checked{
+    background-position: 100% 105%;
+}
+
+.input_wrapper input[type="checkbox"]:checked:after{
+    left: calc(100% - 27px);
+}
+
+.input_wrapper input[type="checkbox"]:checked + .is_checked{
+    -webkit-transform: translateX(-45%) translateY(-45%) scale(1);
+    transform: translateX(-45%) translateY(-45%) scale(1);
+}
+
+.input_wrapper input[type="checkbox"]:checked ~ .is_unchecked{
+    -webkit-transform: translateX(-190%) translateY(-45%) scale(0);
+    transform: translateX(-190%) translateY(-45%) scale(0);
+}

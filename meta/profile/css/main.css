@@ -1,0 +1,283 @@
+*{
+    box-sizing: border-box;
+    transition: 0.2s;
+}
+html{
+    height: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+}
+body{
+    position: relative;
+    min-height: 100%;
+    background-color: var(--body-color);
+    overflow-x: hidden;
+    margin: 0;
+    padding: 30px 6%;
+    transition: 0ms;
+}
+body.nft{
+    padding: 30px 40px;
+}
+h1,h2,h3,p{
+    display: block;
+    font-weight: unset;
+    font-size: unset;
+    margin-block-start: unset;
+    margin-block-end: unset;
+}
+ul{
+    margin-block-start: unset;
+    margin-block-end: unset;
+    margin-inline-start: unset;
+    margin-inline-end: unset;
+    padding-inline-start: unset;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+input,button,textarea{
+    outline: none;
+    border: none;
+}
+input,textarea{
+    font-size: 15px;
+}
+input:focus,button:focus,textarea:focus{
+    outline: none;
+    border: none;
+}
+textarea{
+    resize: none;
+    background-color: transparent;
+}
+.hidden{
+    display: none!important;
+}
+body .margin-10{
+    margin-top: 10px !important;
+}
+body .margin-20{
+    margin-top: 20px !important;
+}
+body .margin-30{
+    margin-top: 30px !important;
+}
+body .margin-50{
+    margin-top: 50px !important;
+}
+body .margin-70{
+    margin-top: 70px !important;
+}
+body .full-width{
+    width: 100%;
+}
+body .flex{
+    display: flex;
+}
+body .flex.inline{
+    display: inline-flex;
+}
+body .flex.row{
+    flex-direction: row;
+}
+body .flex.column{
+    flex-direction: column;
+}
+body .flex.column.left{
+    align-items: flex-start;
+    justify-content: center;
+}
+body .flex.column.right{
+    align-items: flex-end;
+    justify-content: center;
+}
+body .flex.column.center{
+    align-items: center;
+    justify-content: center;
+}
+body .flex.row.left{
+    align-items: center;
+    justify-content: left;
+}
+body .flex.row.right{
+    align-items: center;
+    justify-content: right;
+}
+body .flex.row.center{
+    align-items: center;
+    justify-content: center;
+}
+body .medium{
+    font-weight: 500;
+}
+body .semi-bold{
+    font-weight: 600;
+}
+body .bold{
+    font-weight: 700;
+}
+body .extra-bold{
+     font-weight: 800;
+}
+body .gradient-text{
+    background-color: var(--first-color);
+    background-image: var(--gradient-main);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+body .gradient-text-common{
+    background-color: var(--first-color);
+    background-image: var(--gradient-common);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+body .gradient-text-rare{
+    background-color: var(--first-color);
+    background-image: var(--gradient-rare);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+body .gradient-text-epic{
+    background-color: var(--first-color);
+    background-image: var(--gradient-epic);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+body .gradient-text-legendary{
+    background-color: var(--first-color);
+    background-image: var(--gradient-legendary);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+body .gradient-text-mythical{
+    background-color: var(--first-color);
+    background-image: var(--gradient-mythical);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+body .fa-gradient{
+    background-color: var(--first-color);
+    background-image: var(--gradient-main);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    line-height: unset;
+}
+body .fa-gradient-straight{
+    background-color: var(--first-color);
+    background-image: var(--gradient-main-straight);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    line-height: unset;
+}
+body .align-center{
+    text-align: center;
+}
+body .align-right{
+    text-align: right;
+}
+body .align-left{
+    text-align: left;
+}
+body .particles-js-canvas-el{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1000;
+}
+
+body input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--font-color);
+    opacity: 0.8; /* Firefox */
+}
+
+body input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: var(--font-color);
+}
+
+body input::-ms-input-placeholder { /* Microsoft Edge */
+    color: var(--font-color);
+}
+
+body textarea::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--font-color);
+    opacity: 0.8; /* Firefox */
+}
+
+body textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: var(--font-color);
+}
+
+body textarea::-ms-input-placeholder { /* Microsoft Edge */
+    color: var(--font-color);
+}
+body .swiper{
+    position: relative;
+    padding: 10px 0;
+    width: 100%;
+}
+body .swiper-slide.mobile{
+    height: unset;
+    min-height: 500px;
+    padding-right: 10px;
+}
+body .swiper-vertical>.swiper-scrollbar {
+    right: 0;
+}
+
+@media screen and (max-width: 870px) {
+    body .particles-js-canvas-el{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1000;
+    }
+    body{
+        padding: 20px 30px;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    body{
+        padding: 20px;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+body {
+    scrollbar-width: thin;          /* "auto" or "thin" */
+    scrollbar-color: #888 #f1f1f1;   /* scroll thumb and track */
+}

@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>btktoken.info – Make Future On BlueTek</title>
+    <link rel="icon" type="image/x-icon" href="img/svg/logo.svg">
+
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/top-collection.css">
+    <link rel="stylesheet" href="css/nft-cards.css">
+    <link rel="stylesheet" href="css/collectors.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/drop-down.css">
+    <link rel="stylesheet" href="css/body.css">
+
+    <!--jquery cdn-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" defer></script>
+
+    <!--fontawesome cdn-->
+    <script src="https://kit.fontawesome.com/23b8629dae.js" crossorigin="anonymous" defer></script>
+
+    <!--swipper cdn-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" defer></script>
+
+    <!--run-->
+    <script src="js/run.js" defer></script>
+
+    <!--js files-->
+    <script src="js/toggle-theme.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" defer></script>
+    <script src="js/sticky-navbar.js" defer></script>
+    <script src="js/search-field.js" defer></script>
+    <script src="js/menu.js" defer></script>
+    <script src="js/smooth-scroll.js" defer></script>
+    <script src="js/nft.js" defer></script>
+    <script src="js/drop-down.js" defer></script>
+
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body id="body" class="hidden nft">
+    <!-- <div class="locked flex column center"><div>coming <span class="gradient-text">soon</span></div></div> -->
+
+    <header id="up" class="hero-box">
+        <div id="nav-bar" class="nav-bar">
+            <a href="../home/index.html" class="icon"></a>
+            <a class="nav-button" href="./profile/index.html"><i class="fa-solid fa-user"></i></a>
+            <div id="toggle-theme" class="nav-icon flex inline row center" onclick="toggle_theme()"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 46.43 46.43">
+                    <defs>
+                        <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+                            <stop offset="0" stop-color="#2524ff" />
+                            <stop offset="1" stop-color="#dc25f9" />
+                        </linearGradient>
+                    </defs>
+                    <path id="Path_2" data-name="Path 2" d="M24.215,17.884a6.331,6.331,0,1,1-6.331,6.331,6.35,6.35,0,0,1,6.331-6.331m0-4.221A10.552,10.552,0,1,0,34.767,24.215,10.556,10.556,0,0,0,24.215,13.663ZM3.11,26.326H7.331a2.11,2.11,0,0,0,0-4.221H3.11a2.11,2.11,0,0,0,0,4.221Zm37.988,0H45.32a2.11,2.11,0,0,0,0-4.221H41.1a2.11,2.11,0,1,0,0,4.221ZM22.1,3.11V7.331a2.11,2.11,0,0,0,4.221,0V3.11a2.11,2.11,0,0,0-4.221,0Zm0,37.988V45.32a2.11,2.11,0,0,0,4.221,0V41.1a2.11,2.11,0,1,0-4.221,0ZM11.531,8.555a2.1,2.1,0,0,0-2.976,2.976l2.237,2.237a2.1,2.1,0,0,0,2.976-2.976ZM37.638,34.662a2.1,2.1,0,0,0-2.976,2.976L36.9,39.875A2.1,2.1,0,0,0,39.875,36.9Zm2.237-23.131A2.1,2.1,0,0,0,36.9,8.555l-2.237,2.237a2.1,2.1,0,0,0,2.976,2.976ZM13.768,37.638a2.1,2.1,0,1,0-2.976-2.976L8.555,36.9a2.1,2.1,0,0,0,2.976,2.976Z" transform="translate(-1 -1)" fill="url(#linear-gradient)" />
+                </svg></div>
+            <div id="expand-search" class="nav-icon flex inline row center" onclick="expand_search()"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 22.948 22.948">
+                    <defs>
+                        <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+                            <stop offset="0" stop-color="#2524ff" />
+                            <stop offset="1" stop-color="#dc25f9" />
+                        </linearGradient>
+                    </defs>
+                    <path id="Path_22" data-name="Path 22" d="M19.4,17.432H18.364L18,17.078a8.541,8.541,0,1,0-.918.918l.354.367V19.4l6.56,6.547,1.955-1.955Zm-7.872,0a5.9,5.9,0,1,1,5.9-5.9A5.9,5.9,0,0,1,11.528,17.432Z" transform="translate(-3 -3)" fill="url(#linear-gradient)" />
+                </svg></div>
+            <div id="expand-menu" class="nav-icon flex inline row center" onclick="expand_menu()"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="10" viewBox="0 0 26.667 6.667">
+                    <defs>
+                        <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+                            <stop offset="0" stop-color="#2524ff" />
+                            <stop offset="1" stop-color="#dc25f9" />
+                        </linearGradient>
+                    </defs>
+                    <path id="Path_77" data-name="Path 77" d="M7.333,10a3.333,3.333,0,1,0,3.333,3.333A3.343,3.343,0,0,0,7.333,10Zm20,0a3.333,3.333,0,1,0,3.333,3.333A3.343,3.343,0,0,0,27.333,10Zm-10,0a3.333,3.333,0,1,0,3.333,3.333A3.343,3.343,0,0,0,17.333,10Z" transform="translate(-4 -10)" fill="url(#linear-gradient)" />
+                </svg>
+                <nav id="nav-small-container" class="nav-small-container">
+                    <a class="nav-small-link" href="../home/index.html#token">Token</a><br>
+                    <a class="nav-small-link" href="../app/index.html">Swap</a><br>
+                    <a class="nav-small-link" href="../nft/index.html">NFT</a><br>
+                    <a class="nav-small-link" href="../meta/index.html">Metaverse</a><br>
+                    <a class="nav-small-link" href="../game/index.html">Game</a>
+                </nav>
+            </div>
+            <form id="search-bar-closed" class="search-bar">
+                <label id="search-button-closed" class="search-button flex inline row center"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" viewBox="0 0 22.948 22.948">
+                        <defs>
+                            <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+                                <stop offset="0" stop-color="#2524ff" />
+                                <stop offset="1" stop-color="#dc25f9" />
+                            </linearGradient>
+                        </defs>
+                        <path id="Path_22" data-name="Path 22" d="M19.4,17.432H18.364L18,17.078a8.541,8.541,0,1,0-.918.918l.354.367V19.4l6.56,6.547,1.955-1.955Zm-7.872,0a5.9,5.9,0,1,1,5.9-5.9A5.9,5.9,0,0,1,11.528,17.432Z" transform="translate(-3 -3)" fill="url(#linear-gradient)" />
+                    </svg></label>
+                <input id="search-input-closed" type="text" class="search-input" placeholder="Search...">
+            </form>
+            <nav class="nav-link-container normal flex inline row center">
+                <a class="nav-link" href="../home/index.html#token">Token</a><br>
+                <a class="nav-link" href="../app/index.html">Swap</a><br>
+                <a class="nav-link" href="../nft/index.html">NFT</a><br>
+                <a class="nav-link" href="../meta/index.html">Metaverse</a><br>
+                <a class="nav-link" href="../game/index.html">Game</a>
+            </nav>
+            <form id="search-bar" class="search-bar">
+                <label id="search-button" class="search-button flex inline row center"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" viewBox="0 0 22.948 22.948">
+                        <defs>
+                            <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+                                <stop offset="0" stop-color="#2524ff" />
+                                <stop offset="1" stop-color="#dc25f9" />
+                            </linearGradient>
+                        </defs>
+                        <path id="Path_22" data-name="Path 22" d="M19.4,17.432H18.364L18,17.078a8.541,8.541,0,1,0-.918.918l.354.367V19.4l6.56,6.547,1.955-1.955Zm-7.872,0a5.9,5.9,0,1,1,5.9-5.9A5.9,5.9,0,0,1,11.528,17.432Z" transform="translate(-3 -3)" fill="url(#linear-gradient)" />
+                    </svg></label>
+                <input id="search-input" type="text" class="search-input" placeholder="Search...">
+            </form>
+        </div>
+        <div class="placeholder"></div>
+        <nav class="nav-mobile">
+            <a id="expand-search-mobile" href="#up" class="nav-mobile-link flex inline row center"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="15.438" viewBox="0 0 25 15.438">
+                    <defs>
+                        <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+                            <stop offset="0" stop-color="#2524ff" />
+                            <stop offset="1" stop-color="#dc25f9" />
+                        </linearGradient>
+                    </defs>
+                    <path id="Path_328" data-name="Path 328" d="M18.5,8,6,20.5l2.938,2.937L18.5,13.9l9.563,9.542L31,20.5Z" transform="translate(-6 -8)" fill="url(#linear-gradient)" />
+                </svg></a>
+            <a id="toggle-theme-mobile" class="nav-mobile-link flex inline row center" onclick="toggle_theme_mobile()"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 46.43 46.43">
+                    <defs>
+                        <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+                            <stop offset="0" stop-color="#2524ff" />
+                            <stop offset="1" stop-color="#dc25f9" />
+                        </linearGradient>
+                    </defs>
+                    <path id="Path_2" data-name="Path 2" d="M24.215,17.884a6.331,6.331,0,1,1-6.331,6.331,6.35,6.35,0,0,1,6.331-6.331m0-4.221A10.552,10.552,0,1,0,34.767,24.215,10.556,10.556,0,0,0,24.215,13.663ZM3.11,26.326H7.331a2.11,2.11,0,0,0,0-4.221H3.11a2.11,2.11,0,0,0,0,4.221Zm37.988,0H45.32a2.11,2.11,0,0,0,0-4.221H41.1a2.11,2.11,0,1,0,0,4.221ZM22.1,3.11V7.331a2.11,2.11,0,0,0,4.221,0V3.11a2.11,2.11,0,0,0-4.221,0Zm0,37.988V45.32a2.11,2.11,0,0,0,4.221,0V41.1a2.11,2.11,0,1,0-4.221,0ZM11.531,8.555a2.1,2.1,0,0,0-2.976,2.976l2.237,2.237a2.1,2.1,0,0,0,2.976-2.976ZM37.638,34.662a2.1,2.1,0,0,0-2.976,2.976L36.9,39.875A2.1,2.1,0,0,0,39.875,36.9Zm2.237-23.131A2.1,2.1,0,0,0,36.9,8.555l-2.237,2.237a2.1,2.1,0,0,0,2.976,2.976ZM13.768,37.638a2.1,2.1,0,1,0-2.976-2.976L8.555,36.9a2.1,2.1,0,0,0,2.976,2.976Z" transform="translate(-1 -1)" fill="url(#linear-gradient)" />
+                </svg></a>
+            <a class="nav-mobile-link flex inline row center"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="28" viewBox="0 0 34.4 32.655">
+                    <defs>
+                        <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+                            <stop offset="0" stop-color="#2524ff" />
+                            <stop offset="1" stop-color="#dc25f9" />
+                        </linearGradient>
+                    </defs>
+                    <path id="Path_231" data-name="Path 231" d="M16.259,34.039v-9.8h7.478v9.8A1.922,1.922,0,0,0,25.607,36h5.609a1.922,1.922,0,0,0,1.87-1.961V20.315h3.178a.98.98,0,0,0,.617-1.706L21.251,3.845a1.819,1.819,0,0,0-2.505,0L3.116,18.609a.984.984,0,0,0,.617,1.706H6.911V34.039A1.922,1.922,0,0,0,8.781,36h5.609A1.922,1.922,0,0,0,16.259,34.039Z" transform="translate(-2.802 -3.345)" fill="url(#linear-gradient)" />
+                </svg></a>
+            <a id="expand-token-mobile" class="nav-mobile-link flex inline row center" onclick="expand_token_mobile()"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="30" viewBox="0 0 27 30">
+                    <defs>
+                        <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+                            <stop offset="0" stop-color="#2524ff" />
+                            <stop offset="1" stop-color="#dc25f9" />
+                        </linearGradient>
+                    </defs>
+                    <path id="Path_326" data-name="Path 326" d="M30,9.5,16.5,2,3,9.5v15L16.5,32,30,24.5ZM16.5,5.435l8.865,4.92-4.515,2.5a6.017,6.017,0,0,0-8.7,0l-4.515-2.5ZM15,27.74,6,22.745V12.89l4.695,2.61a5.41,5.41,0,0,0-.2,1.5A5.987,5.987,0,0,0,15,22.805ZM13.5,17a3,3,0,1,1,3,3A3.009,3.009,0,0,1,13.5,17ZM18,27.74V22.82a5.987,5.987,0,0,0,4.5-5.805,5.6,5.6,0,0,0-.195-1.515L27,12.89v9.855Z" transform="translate(-3 -2)" fill="url(#linear-gradient)" />
+                </svg></a>
+            <a id="expand-menu-mobile" class="nav-mobile-link flex inline row center" onclick="expand_menu_mobile()"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="10" viewBox="0 0 26.667 6.667">
+                    <defs>
+                        <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+                            <stop offset="0" stop-color="#2524ff" />
+                            <stop offset="1" stop-color="#dc25f9" />
+                        </linearGradient>
+                    </defs>
+                    <path id="Path_77" data-name="Path 77" d="M7.333,10a3.333,3.333,0,1,0,3.333,3.333A3.343,3.343,0,0,0,7.333,10Zm20,0a3.333,3.333,0,1,0,3.333,3.333A3.343,3.343,0,0,0,27.333,10Zm-10,0a3.333,3.333,0,1,0,3.333,3.333A3.343,3.343,0,0,0,17.333,10Z" transform="translate(-4 -10)" fill="url(#linear-gradient)" />
+                </svg></a>
+            <div id="nav-small-container-mobile" class="nav-small-container mobile">
+                <a class="nav-small-link" href="../home/index.html#token">Token</a><br>
+                <a class="nav-small-link" href="../app/index.html">Swap</a><br>
+                <a class="nav-small-link" href="../nft/index.html">NFT</a><br>
+                <a class="nav-small-link" href="../meta/index.html">Metaverse</a><br>
+                <a class="nav-small-link" href="../game/index.html">Game</a>
+            </div>
+            <div id="nav-token-container-mobile" class="nav-small-container mobile">
+                <div class="icon token"></div>
+                <div class="token-title gradient-text"> Token Info</div><br>
+                <div class="token-item">
+                    <span class="gradient-text">BTK</span><br>
+                    Symbol
+                </div><br>
+                <div class="token-item">
+                    <span class="gradient-text" id="contract">0xe71bbfe86B493Db7F52f8219C4F527FaC97F934F</span> <i style="cursor: pointer" onclick="copy()" id="contract-button" class="fa-solid fa-gradient fa-copy"></i><br>
+                    Smart Contract Address
+                </div><br>
+                <div class="token-item">
+                    <span class="gradient-text">9</span><br>
+                    Decimals
+                </div>
+            </div>
+        </nav>
+        <div class="body-box">
+            <div class="alternate-box padding-right big">
+                <h1 class="main-title extra-bold">
+                    <div class="fix">Blue <span class="gradient-text">Market</span></div>
+                </h1>
+                <h1 class="main-title smaller extra-bold">
+                    <div class="fix">More than <span class="gradient-text">162791</span> NFTS and <span class="gradient-text">3451</span> collections</div>
+                </h1>
+                <h3 class="description-title medium margin-20">Welcome to BlueTek, a virtual blockchain - based Metaverse set in space where you can explore play trade and socialize with other players</h3>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide collect">
+                            <div class="collection-box data all" style="background-image: url('img/jpg/nft (1).jpeg')">
+                                <div class="collection-box-text">Elit enim <br><span class="small">Etiam curabitur </span></div>
+                            </div>
+                            <div class="collection-box data all" style="background-image: url('img/jpg/nft (2).jpeg')">
+                                <div class="collection-box-text">Auctor orci vivamus <br><span class="small">Etiam curabitur </span></div>
+                            </div>
+                            <div class="collection-box data all" style="background-image: url('img/jpg/nft (3).jpeg')">
+                                <div class="collection-box-text">Laoreet dictum <br><span class="small">Libero lacinia </span></div>
+                            </div>
+                            <div class="collection-box data all" style="background-image: url('img/jpg/nft (4).jpeg')">
+                                <div class="collection-box-text">Nisi ornare <br><span class="small">Convallis sodales metus </span></div>
+                            </div>
+                            <div class="collection-box data all" style="background-image: url('img/jpg/nft (5).jpeg')">
+                                <div class="collection-box-text">Rhoncus libero sed <br><span class="small">Lacus gravida elit </span></div>
+                            </div>
+                            <div class="collection-box data all" style="background-image: url('img/jpg/nft (6).jpeg')">
+                                <div class="collection-box-text">Nullam elit <br>Tincidunt lacus nullam <span class="small"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-scrollbar normal"></div>
+                </div>
+            </div>
+            <div class="alternate-box small">
+                <div class="collection-box big data all" style="background-image: url('img/jpg/nft (7).jpeg')">
+                    <div class="collection-box-text">Tellus massa tincidunt <br><span class="small">Etiam curabitur </span></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="margin-20">
+        <h2 class="main-title extra-bold smaller margin-30">Popular <span class="gradient-text">Bids</span></h2>
+        <div class="swiper normal">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="nft-card data all">
+                        <div class="nft-part">
+                            <div class="sender-user" style="background-image: url('img/jpg/user (1).jpeg')"></div>
+                            <div class="sender-user" style="background-image: url('img/jpg/user (2).jpeg')"></div>
+                            <div class="sender-user" style="background-image: url('img/jpg/user (3).jpeg')"></div>
+                            <div class="menu-button"><i class="fa-solid fa-gradient fa-ellipsis"></i></div>
+                        </div>
+                        <div class="nft-image" style="background-image: url('img/jpg/nft (8).jpeg')"></div>
+                        <div class="nft-part margin-10">
+                            <h3 class="nft-card-text">Tellus massa tincidunt <br><span class="gray">Highest bid 1/1</span></h3>
+                            <div class="coin" style="background-image: url('img/svg/eth.svg')"></div>
+                        </div>
+                        <div class="nft-part short margin-20">
+                            <h3 class="nft-card-text full semi-bold"><span class="gradient-text">1.25 ETH</span><span class="right gradient-text"><i class="fa-regular fa-heart"></i> 40</span></h3>
+                        </div>
+                    </div>
+                    <div class="nft-card data all">
+                        <div class="nft-part">
+                            <div class="sender-user" style="background-image: url('img/jpg/user (1).jpeg')"></div>
+                            <div class="sender-user" style="background-image: url('img/jpg/user (2).jpeg')"></div>
+                            <div class="sender-user" style="background-image: url('img/jpg/user (3).jpeg')"></div>
+                            <div class="menu-button"><i class="fa-solid fa-gradient fa-ellipsis"></i></div>
+                        </div>
+                        <div class="nft-image" style="background-image: url('img/jpg/nft (9).jpeg')"></div>
+                        <div class="nft-part margin-10">
+                            <h3 class="nft-card-text">Tellus massa tincidunt <br><span class="gray">Highest bid 1/1</span></h3>
+                            <div class="coin" style="background-image: url('img/svg/eth.svg')"></div>
+                        </div>
+                        <div class="nft-part short margin-20">
+                            <h3 class="nft-card-text full semi-bold"><span class="gradient-text">0.025 ETH</span><span class="right gradient-text"><i class="fa-regular fa-heart"></i> 6</span></h3>
+                        </div>
+                    </div>
+                    <div class="nft-card data all">
+                        <div class="nft-part">
+                            <div class="sender-user" style="background-image: url('img/jpg/user (1).jpeg')"></div>
+                            <div class="sender-user" style="background-image: url('img/jpg/user (2).jpeg')"></div>
+                            <div class="sender-user" style="background-image: url('img/jpg/user (3).jpeg')"></div>
+                            <div class="menu-button"><i class="fa-solid fa-gradient fa-ellipsis"></i></div>
+                        </div>
+                        <div class="nft-image" style="background-image: url('img/jpg/nft (10).jpeg')"></div>
+                        <div class="nft-part margin-10">
+                            <h3 class="nft-card-text">Tellus massa tincidunt <br><span class="gray">Highest bid 1/1</span></h3>
+                            <div class="coin" style="background-image: url('img/svg/eth.svg')"></div>
+                        </div>
+                        <div class="nft-part short margin-20">
+                            <h3 class="nft-card-text full semi-bold"><span class="gradient-text">0.75 ETH</span><span class="right gradient-text"><i class="fa-regular fa-heart"></i> 17</span></h3>
+                        </div>
+                    </div>
+                    <div class="nft-card data all">
+                        <div class="nft-part">
+                            <div class="sender-user" style="background-image: url('img/jpg/user (1).jpeg')"></div>
+                            <div class="sender-user" style="background-image: url('img/jpg/user (2).jpeg')"></div>
+                            <div class="sender-user" style="background-image: url('img/jpg/user (3).jpeg')"></div>
+                            <div class="menu-button"><i class="fa-solid fa-gradient fa-ellipsis"></i></div>
+                        </div>
+                        <div class="nft-image" style="background-image: url('img/jpg/nft (11).jpeg')"></div>
+                        <div class="nft-part margin-10">
+                            <h3 class="nft-card-text">Tellus massa tincidunt <br><span class="gray">Highest bid 1/1</span></h3>
+                            <div class="coin" style="background-image: url('img/svg/eth.svg')"></div>
+                        </div>
+                        <div class="nft-part short margin-20">
+                            <h3 class="nft-card-text full semi-bold"><span class="gradient-text">2.01 ETH</span><span class="right gradient-text"><i class="fa-regular fa-heart"></i> 52</span></h3>
+                        </div>
+                    </div>
+                    <div class="nft-card data all">
+                        <div class="nft-part">
+                            <div class="sender-user" style="background-image: url('img/jpg/user (1).jpeg')"></div>
+                            <div class="sender-user" style="background-image: url('img/jpg/user (2).jpeg')"></div>
+                            <div class="sender-user" style="background-image: url('img/jpg/user (3).jpeg')"></div>
+                            <div class="menu-button"><i class="fa-solid fa-gradient fa-ellipsis"></i></div>
+                        </div>
+                        <div class="nft-image" style="background-image: url('img/jpg/nft (12).jpeg')"></div>
+                        <div class="nft-part margin-10">
+                            <h3 class="nft-card-text">Tellus massa tincidunt <br><span class="gray">Highest bid 1/1</span></h3>
+                            <div class="coin" style="background-image: url('img/svg/eth.svg')"></div>
+                        </div>
+                        <div class="nft-part short margin-20">
+                            <h3 class="nft-card-text full semi-bold"><span class="gradient-text">5 ETH</span><span class="right gradient-text"><i class="fa-regular fa-heart"></i> 70</span></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-scrollbar"></div>
+        </div>
+
+        <h2 class="main-title extra-bold smaller margin-30">Top<div class="select_wrap no-icon">
+                <ul class="default_option">
+                    <li>
+                        <div class="option">
+                            Sellers
+                        </div>
+                    </li>
+                </ul>
+                <ul class="select_ul">
+                    <li>
+                        <div class="option">
+                            Sellers
+                        </div>
+                    </li>
+                    <li>
+                        <div class="option">
+                            Buyers
+                        </div>
+                    </li>
+                </ul>
+            </div> in<div class="select_wrap no-icon">
+                <ul class="default_option">
+                    <li>
+                        <div class="option">
+                            1 Day
+                        </div>
+                    </li>
+                </ul>
+                <ul class="select_ul">
+                    <li>
+                        <div class="option">
+                            1 Day
+                        </div>
+                    </li>
+                    <li>
+                        <div class="option">
+                            15 days
+                        </div>
+                    </li>
+                    <li>
+                        <div class="option">
+                            30 days
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </h2>
+        <div class="swiper normal mobile">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="collector-column data all">
+                        <div class="collector-container">
+                            <div class="collector-number gradient-text">1</div>
+                            <div class="collector-image" style="background-image: url('img/jpg/user (1).jpeg');"></div>
+                            <div class="collector-text">Ruth Wells<br><span class="gray">3851$</span></div>
+                        </div>
+                        <div class="collector-container">
+                            <div class="collector-number gradient-text">2</div>
+                            <div class="collector-image" style="background-image: url('img/jpg/user (2).jpeg');"></div>
+                            <div class="collector-text">Justin Patel<br><span class="gray">3723$</span></div>
+                        </div>
+                        <div class="collector-container">
+                            <div class="collector-number gradient-text">3</div>
+                            <div class="collector-image" style="background-image: url('img/jpg/user (3).jpeg');"></div>
+                            <div class="collector-text">Janet Palmer<br><span class="gray">3674$</span></div>
+                        </div>
+                    </div>
+                    <div class="collector-column data all">
+                        <div class="collector-container">
+                            <div class="collector-number gradient-text">4</div>
+                            <div class="collector-image" style="background-image: url('img/jpg/user (4).jpeg');"></div>
+                            <div class="collector-text">Carolyn Ross<br><span class="gray">3545$</span></div>
+                        </div>
+                        <div class="collector-container">
+                            <div class="collector-number gradient-text">5</div>
+                            <div class="collector-image" style="background-image: url('img/jpg/user (5).jpeg');"></div>
+                            <div class="collector-text">Doris Roberts<br><span class="gray">3443$</span></div>
+                        </div>
+                        <div class="collector-container">
+                            <div class="collector-number gradient-text">6</div>
+                            <div class="collector-image" style="background-image: url('img/jpg/user (6).jpeg');"></div>
+                            <div class="collector-text">Bianca Pierce<br><span class="gray">3326$</span></div>
+                        </div>
+                    </div>
+                    <div class="collector-column data all">
+                        <div class="collector-container">
+                            <div class="collector-number gradient-text">7</div>
+                            <div class="collector-image" style="background-image: url('img/jpg/user (7).jpeg');"></div>
+                            <div class="collector-text">Nancy Evans<br><span class="gray">3274$</span></div>
+                        </div>
+                        <div class="collector-container">
+                            <div class="collector-number gradient-text">8</div>
+                            <div class="collector-image" style="background-image: url('img/jpg/user (8).jpeg');"></div>
+                            <div class="collector-text">Sara Hoffman<br><span class="gray">3114$</span></div>
+                        </div>
+                        <div class="collector-container">
+                            <div class="collector-number gradient-text">9</div>
+                            <div class="collector-image" style="background-image: url('img/jpg/user (9).jpeg');"></div>
+                            <div class="collector-text">Beverly Stanley<br><span class="gray">3013$</span></div>
+                        </div>
+                    </div>
+                    <div class="collector-column data all">
+                        <div class="collector-container">
+                            <div class="collector-number gradient-text">10</div>
+                            <div class="collector-image" style="background-image: url('img/jpg/user (10).jpeg');"></div>
+                            <div class="collector-text">Aaron Dean<br><span class="gray">2989$</span></div>
+                        </div>
+                        <div class="collector-container">
+                            <div class="collector-number gradient-text">11</div>
+                            <div class="collector-image" style="background-image: url('img/jpg/user (11).jpeg');"></div>
+                            <div class="collector-text">Alice Woodkin<br><span class="gray">2846$</span></div>
+                        </div>
+                        <div class="collector-container">
+                            <div class="collector-number gradient-text">12</div>
+                            <div class="collector-image" style="background-image: url('img/jpg/user (12).jpeg');"></div>
+                            <div class="collector-text">Louis Griffin<br><span class="gray">2761$</span></div>
+                        </div>
+                    </div>
+                    <div class="collector-column data all">
+                        <div class="collector-container">
+                            <div class="collector-number gradient-text">13</div>
+                            <div class="collector-image" style="background-image: url('img/jpg/user (13).jpeg');"></div>
+                            <div class="collector-text">Amanda Estrada<br><span class="gray">2650$</span></div>
+                        </div>
+                        <div class="collector-container">
+                            <div class="collector-number gradient-text">14</div>
+                            <div class="collector-image" style="background-image: url('img/jpg/user (14).jpeg');"></div>
+                            <div class="collector-text">Patrick Adams<br><span class="gray">2580$</span></div>
+                        </div>
+                        <div class="collector-container">
+                            <div class="collector-number gradient-text">15</div>
+                            <div class="collector-image" style="background-image: url('img/jpg/user (15).jpeg');"></div>
+                            <div class="collector-text">Randy Fuller<br><span class="gray">2436$</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-scrollbar high"></div>
+        </div>
+        <a class="hero-button masked">See all</a>
+
+        <h2 class="main-title extra-bold smaller margin-30">Best <span class="gradient-text">Collections</span></h2>
+        <div class="swiper normal">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="nft-card data all">
+                        <div class="nft-part">
+                            <h3 class="nft-card-text full center">Tellus massa tincidunt <br><span class="gray">6887$</span></h3>
+                        </div>
+                        <div class="nft-image collection" style="background-image: url('img/jpg/nft (1).jpeg')">
+                            <div class="sender-user-collection" style="background-image: url('img/jpg/user (2).jpeg');margin-right: 10px;">
+                                <i class="fa-solid fa-gradient fa-circle-check"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nft-card data all">
+                        <div class="nft-part">
+                            <h3 class="nft-card-text full center">Tellus massa tincidunt <br><span class="gray">5789$</span></h3>
+                        </div>
+                        <div class="nft-image collection" style="background-image: url('img/jpg/nft (2).jpeg')">
+                            <div class="sender-user-collection" style="background-image: url('img/jpg/user (3).jpeg');margin-right: 10px;">
+                                <i class="fa-solid fa-gradient fa-circle-check"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nft-card data all">
+                        <div class="nft-part">
+                            <h3 class="nft-card-text full center">Tellus massa tincidunt <br><span class="gray">4571$</span></h3>
+                        </div>
+                        <div class="nft-image collection" style="background-image: url('img/jpg/nft (3).jpeg')">
+                            <div class="sender-user-collection" style="background-image: url('img/jpg/user (4).jpeg');margin-right: 10px;">
+                                <i class="fa-solid fa-gradient fa-circle-check"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nft-card data all">
+                        <div class="nft-part">
+                            <h3 class="nft-card-text full center">Tellus massa tincidunt <br><span class="gray">2514$</span></h3>
+                        </div>
+                        <div class="nft-image collection" style="background-image: url('img/jpg/nft (4).jpeg')">
+                            <div class="sender-user-collection" style="background-image: url('img/jpg/user (5).jpeg');margin-right: 10px;">
+                                <i class="fa-solid fa-gradient fa-circle-check"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nft-card data all">
+                        <div class="nft-part">
+                            <h3 class="nft-card-text full center">Tellus massa tincidunt <br><span class="gray">1432$</span></h3>
+                        </div>
+                        <div class="nft-image collection" style="background-image: url('img/jpg/nft (5).jpeg')">
+                            <div class="sender-user-collection" style="background-image: url('img/jpg/user (6).jpeg');margin-right: 10px;">
+                                <i class="fa-solid fa-gradient fa-circle-check"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-scrollbar"></div>
+        </div>
+
+        <h2 class="main-title extra-bold smaller margin-30">Top <span class="gradient-text">Collections</span> in <div class="select_wrap no-icon">
+                <ul class="default_option">
+                    <li>
+                        <div class="option">
+                            1 Day
+                        </div>
+                    </li>
+                </ul>
+                <ul class="select_ul">
+                    <li>
+                        <div class="option">
+                            1 Day
+                        </div>
+                    </li>
+                    <li>
+                        <div class="option">
+                            15 days
+                        </div>
+                    </li>
+                    <li>
+                        <div class="option">
+                            30 days
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </h2>
+        <div class="swiper normal mobile">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="collector-column data all">
+                        <div class="collector-container">
+                            <div class="collector-number gradient-text">1</div>
+                            <div class="collector-image" style="background-image: url('img/jpg/user (1).jpeg');"></div>
+                            <div class="collector-text">Ruth Wells<br><span class="gray">3851$</span></div>
+                        </div>
+                        <div class="collector-container">
+                            <div class="collector-number gradient-text">2</div>
+                            <div class="collector-image" style="background-image: url('img/jpg/user (2).jpeg');"></div>
+                            <div class="collector-text">Justin Patel<br><span class="gray">3723$</span></div>
+                        </div>
+                        <div class="collector-container">
+                            <div class="collector-number gradient-text">3</div>
+                            <div class="collector-image" style="background-image: url('img/jpg/user (3).jpeg');"></div>
+                            <div class="collector-text">Janet Palmer<br><span class="gray">3674$</span></div>
+                        </div>
+                    </div>
+                    <div class="collector-column data all">
+                        <div class="collector-container">
+                            <div class="collector-number gradient-text">4</div>
+                            <div class="collector-image" style="background-image: url('img/jpg/user (4).jpeg');"></div>
+                            <div class="collector-text">Carolyn Ross<br><span class="gray">3545$</span></div>
+                        </div>
+                        <div class="collector-container">
+                            <div class="collector-number gradient-text">5</div>
+                            <div class="collector-image" style="background-image: url('img/jpg/user (5).jpeg');"></div>
+                            <div class="collector-text">Doris Roberts<br><span class="gray">3443$</span></div>
+                        </div>
+                        <div class="collector-container">
+                            <div class="collector-number gradient-text">6</div>
+                            <div class="collector-image" style="background-image: url('img/jpg/user (6).jpeg');"></div>
+                            <div class="collector-text">Bianca Pierce<br><span class="gray">3326$</span></div>
+                        </div>
+                    </div>
+                    <div class="collector-column data all">
+                        <div class="collector-container">
+                            <div class="collector-number gradient-text">7</div>
+                            <div class="collector-image" style="background-image: url('img/jpg/user (7).jpeg');"></div>
+                            <div class="collector-text">Nancy Evans<br><span class="gray">3274$</span></div>
+                        </div>
+                        <div class="collector-container">
+                            <div class="collector-number gradient-text">8</div>
+                            <div class="collector-image" style="background-image: url('img/jpg/user (8).jpeg');"></div>
+                            <div class="collector-text">Sara Hoffman<br><span class="gray">3114$</span></div>
+                        </div>
+                        <div class="collector-container">
+                            <div class="collector-number gradient-text">9</div>
+                            <div class="collector-image" style="background-image: url('img/jpg/user (9).jpeg');"></div>
+                            <div class="collector-text">Beverly Stanley<br><span class="gray">3013$</span></div>
+                        </div>
+                    </div>
+                    <div class="collector-column data all">
+                        <div class="collector-container">
+                            <div class="collector-number gradient-text">10</div>
+                            <div class="collector-image" style="background-image: url('img/jpg/user (10).jpeg');"></div>
+                            <div class="collector-text">Aaron Dean<br><span class="gray">2989$</span></div>
+                        </div>
+                        <div class="collector-container">
+                            <div class="collector-number gradient-text">11</div>
+                            <div class="collector-image" style="background-image: url('img/jpg/user (11).jpeg');"></div>
+                            <div class="collector-text">Alice Woodkin<br><span class="gray">2846$</span></div>
+                        </div>
+                        <div class="collector-container">
+                            <div class="collector-number gradient-text">12</div>
+                            <div class="collector-image" style="background-image: url('img/jpg/user (12).jpeg');"></div>
+                            <div class="collector-text">Louis Griffin<br><span class="gray">2761$</span></div>
+                        </div>
+                    </div>
+                    <div class="collector-column data all">
+                        <div class="collector-container">
+                            <div class="collector-number gradient-text">13</div>
+                            <div class="collector-image" style="background-image: url('img/jpg/user (13).jpeg');"></div>
+                            <div class="collector-text">Amanda Estrada<br><span class="gray">2650$</span></div>
+                        </div>
+                        <div class="collector-container">
+                            <div class="collector-number gradient-text">14</div>
+                            <div class="collector-image" style="background-image: url('img/jpg/user (14).jpeg');"></div>
+                            <div class="collector-text">Patrick Adams<br><span class="gray">2580$</span></div>
+                        </div>
+                        <div class="collector-container">
+                            <div class="collector-number gradient-text">15</div>
+                            <div class="collector-image" style="background-image: url('img/jpg/user (15).jpeg');"></div>
+                            <div class="collector-text">Randy Fuller<br><span class="gray">2436$</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-scrollbar high"></div>
+        </div>
+        <a class="hero-button masked">See all</a>
+
+        <h2 class="main-title extra-bold smaller margin-30">Browse Our NFT <span class="gradient-text">Gallery</span></h2>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide tags">
+                    <div class="tag active data all">All</div>
+                    <div class="tag data all">Trending</div>
+                    <div class="tag data all">Top</div>
+                    <div class="tag data all">Art</div>
+                    <div class="tag data all">Collectibles</div>
+                    <div class="tag data all">Domain names</div>
+                    <div class="tag data all">Music</div>
+                    <div class="tag data all">Photography</div>
+                    <div class="tag data all">Sports</div>
+                    <div class="tag data all">Trading cards</div>
+                    <div class="tag data all">Utility</div>
+                    <div class="tag data all">Virtual worlds</div>
+                </div>
+            </div>
+            <div class="swiper-scrollbar normal"></div>
+        </div>
+        <div class="swiper normal mobile">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="nft-card data all">
+                        <div class="nft-part">
+                            <div class="sender-user" style="background-image: url('img/jpg/user (1).jpeg')"></div>
+                            <div class="sender-user" style="background-image: url('img/jpg/user (2).jpeg')"></div>
+                            <div class="sender-user" style="background-image: url('img/jpg/user (3).jpeg')"></div>
+                            <div class="menu-button"><i class="fa-solid fa-gradient fa-ellipsis"></i></div>
+                        </div>
+                        <div class="nft-image" style="background-image: url('img/jpg/nft (1).jpeg')"></div>
+                        <div class="nft-part margin-10">
+                            <h3 class="nft-card-text">Tellus massa tincidunt <br><span class="blue gradient-text">Buy now</span></h3>
+                            <div class="coin" style="background-image: url('img/svg/eth.svg')"></div>
+                        </div>
+                        <div class="nft-part short margin-20">
+                            <h3 class="nft-card-text full semi-bold"><span class="gradient-text">1.25 ETH</span><span class="right gradient-text"><i class="fa-regular fa-heart"></i> 40</span></h3>
+                        </div>
+                    </div>
+                    <div class="nft-card data all">
+                        <div class="nft-part">
+                            <div class="sender-user" style="background-image: url('img/jpg/user (1).jpeg')"></div>
+                            <div class="sender-user" style="background-image: url('img/jpg/user (2).jpeg')"></div>
+                            <div class="sender-user" style="background-image: url('img/jpg/user (3).jpeg')"></div>
+                            <div class="menu-button"><i class="fa-solid fa-gradient fa-ellipsis"></i></div>
+                        </div>
+                        <div class="nft-image" style="background-image: url('img/jpg/nft (2).jpeg')"></div>
+                        <div class="nft-part margin-10">
+                            <h3 class="nft-card-text">Tellus massa tincidunt <br><span class="blue gradient-text">Buy now</span></h3>
+                            <div class="coin" style="background-image: url('img/svg/eth.svg')"></div>
+                        </div>
+                        <div class="nft-part short margin-20">
+                            <h3 class="nft-card-text full semi-bold"><span class="gradient-text">0.025 ETH</span><span class="right gradient-text"><i class="fa-regular fa-heart"></i> 6</span></h3>
+                        </div>
+                    </div>
+                    <div class="nft-card data all">
+                        <div class="nft-part">
+                            <div class="sender-user" style="background-image: url('img/jpg/user (1).jpeg')"></div>
+                            <div class="sender-user" style="background-image: url('img/jpg/user (2).jpeg')"></div>
+                            <div class="sender-user" style="background-image: url('img/jpg/user (3).jpeg')"></div>
+                            <div class="menu-button"><i class="fa-solid fa-gradient fa-ellipsis"></i></div>
+                        </div>
+                        <div class="nft-image" style="background-image: url('img/jpg/nft (3).jpeg')"></div>
+                        <div class="nft-part margin-10">
+                            <h3 class="nft-card-text">Tellus massa tincidunt <br><span class="blue gradient-text">Buy now</span></h3>
+                            <div class="coin" style="background-image: url('img/svg/eth.svg')"></div>
+                        </div>
+                        <div class="nft-part short margin-20">
+                            <h3 class="nft-card-text full semi-bold"><span class="gradient-text">0.75 ETH</span><span class="right gradient-text"><i class="fa-regular fa-heart"></i> 17</span></h3>
+                        </div>
+                    </div>
+                    <div class="nft-card data all">
+                        <div class="nft-part">
+                            <div class="sender-user" style="background-image: url('img/jpg/user (1).jpeg')"></div>
+                            <div class="sender-user" style="background-image: url('img/jpg/user (2).jpeg')"></div>
+                            <div class="sender-user" style="background-image: url('img/jpg/user (3).jpeg')"></div>
+                            <div class="menu-button"><i class="fa-solid fa-gradient fa-ellipsis"></i></div>
+                        </div>
+                        <div class="nft-image" style="background-image: url('img/jpg/nft (4).jpeg')"></div>
+                        <div class="nft-part margin-10">
+                            <h3 class="nft-card-text">Tellus massa tincidunt <br><span class="blue gradient-text">Buy now</span></h3>
+                            <div class="coin" style="background-image: url('img/svg/eth.svg')"></div>
+                        </div>
+                        <div class="nft-part short margin-20">
+                            <h3 class="nft-card-text full semi-bold"><span class="gradient-text">2.01 ETH</span><span class="right gradient-text"><i class="fa-regular fa-heart"></i> 52</span></h3>
+                        </div>
+                    </div>
+                    <div class="nft-card data all">
+                        <div class="nft-part">
+                            <div class="sender-user" style="background-image: url('img/jpg/user (1).jpeg')"></div>
+                            <div class="sender-user" style="background-image: url('img/jpg/user (2).jpeg')"></div>
+                            <div class="sender-user" style="background-image: url('img/jpg/user (3).jpeg')"></div>
+                            <div class="menu-button"><i class="fa-solid fa-gradient fa-ellipsis"></i></div>
+                        </div>
+                        <div class="nft-image" style="background-image: url('img/jpg/nft (5).jpeg')"></div>
+                        <div class="nft-part margin-10">
+                            <h3 class="nft-card-text">Tellus massa tincidunt <br><span class="blue gradient-text">Buy now</span></h3>
+                            <div class="coin" style="background-image: url('img/svg/eth.svg')"></div>
+                        </div>
+                        <div class="nft-part short margin-20">
+                            <h3 class="nft-card-text full semi-bold"><span class="gradient-text">5 ETH</span><span class="right gradient-text"><i class="fa-regular fa-heart"></i> 70</span></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-scrollbar"></div>
+        </div>
+        <div class="swiper normal mobile">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="nft-card data all">
+                        <div class="nft-part">
+                            <div class="sender-user" style="background-image: url('img/jpg/user (1).jpeg')"></div>
+                            <div class="sender-user" style="background-image: url('img/jpg/user (2).jpeg')"></div>
+                            <div class="sender-user" style="background-image: url('img/jpg/user (3).jpeg')"></div>
+                            <div class="menu-button"><i class="fa-solid fa-gradient fa-ellipsis"></i></div>
+                        </div>
+                        <div class="nft-image" style="background-image: url('img/jpg/nft (6).jpeg')"></div>
+                        <div class="nft-part margin-10">
+                            <h3 class="nft-card-text">Tellus massa tincidunt <br><span class="blue gradient-text">Buy now</span></h3>
+                            <div class="coin" style="background-image: url('img/svg/eth.svg')"></div>
+                        </div>
+                        <div class="nft-part short margin-20">
+                            <h3 class="nft-card-text full semi-bold"><span class="gradient-text">1.25 ETH</span><span class="right gradient-text"><i class="fa-regular fa-heart"></i> 40</span></h3>
+                        </div>
+                    </div>
+                    <div class="nft-card data all">
+                        <div class="nft-part">
+                            <div class="sender-user" style="background-image: url('img/jpg/user (1).jpeg')"></div>
+                            <div class="sender-user" style="background-image: url('img/jpg/user (2).jpeg')"></div>
+                            <div class="sender-user" style="background-image: url('img/jpg/user (3).jpeg')"></div>
+                            <div class="menu-button"><i class="fa-solid fa-gradient fa-ellipsis"></i></div>
+                        </div>
+                        <div class="nft-image" style="background-image: url('img/jpg/nft (7).jpeg')"></div>
+                        <div class="nft-part margin-10">
+                            <h3 class="nft-card-text">Tellus massa tincidunt <br><span class="blue gradient-text">Buy now</span></h3>
+                            <div class="coin" style="background-image: url('img/svg/eth.svg')"></div>
+                        </div>
+                        <div class="nft-part short margin-20">
+                            <h3 class="nft-card-text full semi-bold"><span class="gradient-text">0.025 ETH</span><span class="right gradient-text"><i class="fa-regular fa-heart"></i> 6</span></h3>
+                        </div>
+                    </div>
+                    <div class="nft-card data all">
+                        <div class="nft-part">
+                            <div class="sender-user" style="background-image: url('img/jpg/user (1).jpeg')"></div>
+                            <div class="sender-user" style="background-image: url('img/jpg/user (2).jpeg')"></div>
+                            <div class="sender-user" style="background-image: url('img/jpg/user (3).jpeg')"></div>
+                            <div class="menu-button"><i class="fa-solid fa-gradient fa-ellipsis"></i></div>
+                        </div>
+                        <div class="nft-image" style="background-image: url('img/jpg/nft (8).jpeg')"></div>
+                        <div class="nft-part margin-10">
+                            <h3 class="nft-card-text">Tellus massa tincidunt <br><span class="blue gradient-text">Buy now</span></h3>
+                            <div class="coin" style="background-image: url('img/svg/eth.svg')"></div>
+                        </div>
+                        <div class="nft-part short margin-20">
+                            <h3 class="nft-card-text full semi-bold"><span class="gradient-text">0.75 ETH</span><span class="right gradient-text"><i class="fa-regular fa-heart"></i> 17</span></h3>
+                        </div>
+                    </div>
+                    <div class="nft-card data all">
+                        <div class="nft-part">
+                            <div class="sender-user" style="background-image: url('img/jpg/user (1).jpeg')"></div>
+                            <div class="sender-user" style="background-image: url('img/jpg/user (2).jpeg')"></div>
+                            <div class="sender-user" style="background-image: url('img/jpg/user (3).jpeg')"></div>
+                            <div class="menu-button"><i class="fa-solid fa-gradient fa-ellipsis"></i></div>
+                        </div>
+                        <div class="nft-image" style="background-image: url('img/jpg/nft (9).jpeg')"></div>
+                        <div class="nft-part margin-10">
+                            <h3 class="nft-card-text">Tellus massa tincidunt <br><span class="blue gradient-text">Buy now</span></h3>
+                            <div class="coin" style="background-image: url('img/svg/eth.svg')"></div>
+                        </div>
+                        <div class="nft-part short margin-20">
+                            <h3 class="nft-card-text full semi-bold"><span class="gradient-text">2.01 ETH</span><span class="right gradient-text"><i class="fa-regular fa-heart"></i> 52</span></h3>
+                        </div>
+                    </div>
+                    <div class="nft-card data all">
+                        <div class="nft-part">
+                            <div class="sender-user" style="background-image: url('img/jpg/user (1).jpeg')"></div>
+                            <div class="sender-user" style="background-image: url('img/jpg/user (2).jpeg')"></div>
+                            <div class="sender-user" style="background-image: url('img/jpg/user (3).jpeg')"></div>
+                            <div class="menu-button"><i class="fa-solid fa-gradient fa-ellipsis"></i></div>
+                        </div>
+                        <div class="nft-image" style="background-image: url('img/jpg/nft (10).jpeg')"></div>
+                        <div class="nft-part margin-10">
+                            <h3 class="nft-card-text">Tellus massa tincidunt <br><span class="blue gradient-text">Buy now</span></h3>
+                            <div class="coin" style="background-image: url('img/svg/eth.svg')"></div>
+                        </div>
+                        <div class="nft-part short">
+                            <h3 class="nft-card-text full semi-bold"><span class="gradient-text">5 ETH</span><span class="right gradient-text"><i class="fa-regular fa-heart"></i> 70</span></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-scrollbar"></div>
+        </div>
+
+        <div class="hero-button masked margin-30">Load more <i class="fa-solid fa-gradient fa-chevron-down"></i></div>
+    </main>
+
+    <footer class="footer-bar">
+        <div class="social-link-container flex inline column center">
+            <a class="social-link" target="_blank" href=""><i class="fa-brands fa-gradient fa-twitter"></i></a>
+            <a class="social-link" target="_blank" href=""><i class="fa-brands fa-gradient fa-instagram"></i></a>
+            <a class="social-link" target="_blank" href=""><i class="fa-brands fa-gradient fa-linkedin"></i></a>
+            <a class="social-link" target="_blank" href=""><i class="fa-brands fa-gradient fa-reddit-alien"></i></a>
+            <a class="social-link" target="_blank" href=""><i class="fa-brands fa-gradient fa-medium"></i></a>
+            <a class="social-link" target="_blank" href=""><i class="fa-brands fa-gradient fa-telegram"></i></a>
+        </div>
+
+        <nav class="nav-link-container flex inline row center">
+            <a class="nav-link" href="../home/index.html#token">Token</a><br>
+            <a class="nav-link" href="../app/index.html">Swap</a><br>
+            <a class="nav-link" href="../nft/index.html">NFT</a><br>
+            <a class="nav-link" href="../meta/index.html">Metaverse</a><br>
+            <a class="nav-link" href="../game/index.html">Game</a>
+        </nav>
+
+        <div class="copy-right"><i class="fa-regular fa-gradient fa-copyright"></i> 2022 <a href="../home/index.html" class="gradient-text">BlueTek</a> All Right Reserved</div>
+    </footer>
+</body>
+
+</html>

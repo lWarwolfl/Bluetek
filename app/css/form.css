@@ -1,0 +1,246 @@
+.description-title{
+    margin-top: 10px;
+}
+.form{
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: 30px auto;
+    text-align: center;
+}
+.swap-title{
+    display: inline-block;
+    width: 100%;
+    margin-top: 50px;
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--font-color);
+    font-family: var(--primary-font);
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: unset;
+}
+.swap-warning{
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--font-color);
+    font-family: var(--primary-font);
+    text-align: center;
+}
+.swap-label{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: var(--font-color);
+    font-family: var(--primary-font);
+    text-align: left;
+}
+.swap-input{
+    height: 80px;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 220px;
+    border-radius: 5px 40px 40px 40px;
+    font-family: var(--primary-font);
+    font-weight: 500;
+    color: var(--font-color);
+    background-image: var(--gradient-main-lighter);
+    background-size: 210% 210%;
+    background-position: 100% 105%;
+    box-shadow: 0 2px 5px var(--box-shadow-color);
+    text-align: left;
+}
+.swap-input:hover,.swap-input:focus{
+    background-position: 30% 105%;
+    box-shadow: 0 5px 8px var(--box-shadow-color);
+}
+.swap-detail{
+    position: relative;
+    height: min-content;
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--font-color);
+    background-image: var(--gradient-main-lighter);
+    background-size: 210% 210%;
+    background-position: 100% 105%;
+    box-shadow: 0 2px 5px var(--box-shadow-color);
+    text-align: left;
+}
+.setting-box .detail{
+    margin-bottom: 5px;
+    height: 30px;
+}
+.detail{
+    vertical-align: middle;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 15px;
+    white-space: nowrap;
+    font-family: var(--primary-font);
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.detail.farm{
+    height: 56px;
+    line-height: 36px;
+    font-size: 16px;
+    padding: 6px 0 6px 10px;
+    border-radius: 25px;
+    box-shadow: 0 2px 5px var(--box-shadow-color);
+    border: 3px dashed var(--first-color-light);
+}
+.coin{
+    float: left;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px var(--box-shadow-color);
+    background-color: var(--lightest-color);
+    margin: 0 5px;
+    background-size: 70% 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.coin.bnb{
+    background-image: url("../img/svg/bnb.svg");
+}
+.coin.eth{
+    background-image: url("../img/svg/eth.svg");
+}
+.coin:first-child{
+    margin-left: 0;
+    margin-right: -15px;
+}
+.setting-box .detail.semi-bold{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.detail.hide{
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 0;
+    padding: 0;
+    border: none;
+}
+span.right{
+    display: inline-block;
+    float: right;
+    font-weight: 500;
+}
+.reverse-button{
+    position: relative;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    margin: 10px auto -40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px var(--box-shadow-color);
+    background-image: var(--gradient-main-lighter);
+    background-size: 210% 210%;
+    background-position: 100% 110%;
+    z-index: 1500;
+}
+.reverse-button.pool{
+    margin: 10px auto 10px;
+}
+.reverse-button:hover{
+    background-position: 30% 110%;
+    box-shadow: 0 5px 8px var(--box-shadow-color);
+}
+.reverse-button i{
+    transform: rotate(90deg);
+}
+.reverse-button:hover i{
+    transform: rotate(270deg);
+}
+.more-button,.expand-button{
+    width: 40px;
+    height: 40px;
+    margin: 0 auto -10px;
+    line-height: 40px;
+    font-size: 22px;
+    text-align: center;
+    background-image: var(--gradient-main-lightest);
+    background-size: 210% 210%;
+    background-position: 100% 110%;
+    box-shadow: 0 2px 5px var(--box-shadow-color);
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+}
+.more-button:hover,.expand-button:hover{
+    background-position: 30% 110%;
+    box-shadow: 0 5px 8px var(--box-shadow-color);
+}
+.more-button .spinner{
+    text-align: center;
+    display: inline-block;
+}
+.more-button.active .spinner,.expand-button.active .spinner{
+    text-align: center;
+    display: inline-block;
+    transform: rotate(-180deg);
+}
+body .particles-js-canvas-el{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1000;
+}
+.nav-mobile{
+    position: absolute;
+    bottom: 20px;
+}
+.tool-tip-box{
+    position: absolute;
+    margin-left: 5px;
+    width: 20px;
+    height: 18px;
+    display: inline-block;
+    vertical-align: center;
+}
+.tool-tip-box .fa-gradient{
+    font-size: 19px;
+}
+.tippy-box[data-theme~='me'] {
+    background-color: var(--lightest-color);
+    color: var(--font-color);
+    border-radius: 20px;
+    padding: 5px;
+    font-family: var(--primary-font);
+    font-size: 14px;
+    font-weight: 600;
+    box-shadow: 0 2px 5 px var(--box-shadow-color);
+}
+.tippy-box[data-theme~='me'] .tippy-arrow:before{
+    color: var(--lightest-color);
+}
+
+@media screen and (max-width: 600px) {
+    .swap-title{
+        margin-top: 30px;
+        font-size: 34px;
+    }
+}

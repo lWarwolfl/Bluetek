@@ -1,0 +1,220 @@
+.hero-box{
+    position: relative;
+    width: 100%;
+}
+.main-title{
+    width: 100%;
+    margin-top: 50px;
+    font-size: 42px;
+    color: var(--opposite-font-color);
+    font-family: var(--primary-font);
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 800;
+    transition: unset;
+}
+.main-title.normal{
+    color: var(--font-color);
+}
+.main-title.smaller{
+    font-size: 30px;
+    margin-top: 10px;
+    text-align: left;
+}
+.description-title{
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 20px;
+    color: var(--opposite-font-color);
+    font-family: var(--primary-font);
+    font-weight: 600;
+    text-align: center;
+}
+.title-box{
+    width: 100%;
+    height: 100%;
+    padding: 0 5%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(255,255,255,0) 100%);
+    opacity: 1;
+    transition: opacity 1s;
+}
+body .title-box.mobile{
+    display: none;
+}
+body .title-box.desktop{
+    display: flex;
+}
+.hero-box canvas{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1000;
+}
+.hero-button{
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    height: 50px;
+    margin: 20px 0 0 10px;
+    line-height: 50px;
+    border-radius: 25px;
+    font-family: var(--primary-font);
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 0 25px;
+    white-space: nowrap;
+    text-align: center;
+    color: var(--font-color);
+    box-shadow: 0 2px 5px var(--box-shadow-color);
+}
+.hero-button:hover{
+    box-shadow: 0 5px 8px var(--box-shadow-color);
+    background-position: 30% 105%;
+}
+.hero-button.masked:before {
+    content:"";
+    position:absolute;
+    z-index:-1;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    padding: 3px;
+    border-radius: 25px;
+    background: var(--gradient-main);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+.hero-button.lighter{
+    background-image: var(--gradient-main-lightest);
+    box-shadow: 0 1px 3px var(--box-shadow-color);
+    float: right;
+    height: 38px;
+    line-height: 38px;
+    font-size: 14px;
+    margin: 0 7px 0;
+}
+.hero-button.lighter:hover{
+    box-shadow: 0 3px 6px var(--box-shadow-color);
+    background-position: 30% 105%;
+}
+.hero-button.body{
+    margin: 20px 0 0;
+}
+.social-link-container{
+    position: absolute;
+    top: 180px;
+    right: 0;
+    width:50px;
+}
+.social-link{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 27px;
+    border-radius: 25px;
+    margin: 7px 0;
+    box-shadow: 0 2px 5px var(--box-shadow-color);
+    background-image: var(--gradient-main-lighter);
+    background-size: 210% 210%;
+    background-position: 100% 110%;
+}
+.social-link:hover{
+    background-position: 30% 110%;
+    box-shadow: 0 5px 8px var(--box-shadow-color);
+}
+.hero-image{
+    width: 100%;
+    max-width: 430px;
+    padding-bottom: 330px;
+    margin: 0 auto;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../img/png/hero.png");
+}
+
+@media screen and (max-width: 870px) {
+    body .social-link-container{
+        position: static;
+        width: min-content;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 20px;
+    }
+    body .social-link-container.flex{
+        display: flex;
+    }
+    body .social-link-container.flex.inline.column{
+        flex-direction: row;
+    }
+    body .social-link{
+        margin: 0 7px;
+    }
+    .main-title.home{
+        font-size: 34px;
+    }
+    .description-title.home{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main-title{
+        margin-top: 30px;
+        font-size: 36px;
+        color: var(--font-color);
+    }
+    .main-title.smaller{
+        font-size: 24px;
+    }
+    .main-title .fix{
+        display: inline-block;
+        text-align: center;
+    }
+    .description-title{
+        text-align: justify;
+        text-align-last: center;
+        font-size: 19px;
+        color: var(--font-color);
+    }
+    .hero-button.masked{
+        width: 100%;
+        margin: -20px 0 0;
+    }
+    .title-box{
+        position: relative;
+        top: unset;
+        left: unset;
+        width: 100%;
+        margin: 0 0 30px;
+        padding: 0;
+        background: unset;
+    }
+    body .title-box.mobile{
+        display: flex;
+    }
+    body .title-box.desktop{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .main-title{
+        margin-top: 20px;
+    }
+}

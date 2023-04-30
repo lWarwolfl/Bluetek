@@ -1,0 +1,21 @@
+body .swiper-horizontal>.swiper-scrollbar{
+    height: 100%;
+    width: 7px;
+    background-image: var(--gradient-main-lightest-straight);
+}
+body .swiper-scrollbar-drag{
+    background-image: var(--gradient-main-light-straight);
+    transition: 250ms!important;
+}
+body .swiper-slide{
+    display: block;
+    padding: 0 10px;
+    height: unset;
+    min-height: 500px;
+}
+body .swiper-wrapper{
+    transition: 250ms!important;
+}
+.swiper-slide.tags,.swiper-slide.collect{
+    white-space: nowrap;
+}

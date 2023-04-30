@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>btktoken.info – Make Future On BlueTek</title>
+    <link rel="icon" type="image/x-icon" href="img/svg/logo.svg">
+
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/body.css">
+
+    <!--jquery cdn-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" defer></script>
+
+    <!--fontawesome cdn-->
+    <script src="https://kit.fontawesome.com/23b8629dae.js" crossorigin="anonymous" defer></script>
+
+    <!--swipper cdn-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" defer></script>
+
+    <!--chart cdn-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js" integrity="sha256-ErZ09KkZnzjpqcane4SCyyHsKAXMvID9/xwbl/Aq1pc=" crossorigin="anonymous" defer></script>
+
+    <!--lazyload cdn-->
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.5.1/dist/lazyload.min.js" async></script>
+
+    <!--run-->
+    <script src="js/run.js" defer></script>
+
+    <!--js files-->
+    <script src="js/toggle-theme.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" defer></script>
+    <script src="js/animation-activator.js" defer></script>
+    <script src="js/sticky-navbar.js" defer></script>
+    <script src="js/search-field.js" defer></script>
+    <script src="js/menu.js" defer></script>
+    <script src="js/mute.js" defer></script>
+    <script src="js/smooth-scroll.js" defer></script>
+    <script src="js/copy.js" defer></script>
+
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body id="body" class="hidden">
+    <header id="up" class="hero-box">
+        <div id="nav-bar" class="nav-bar">
+            <a href="../home/index.html" class="icon"></a>
+            <a class="nav-button" href="./profile/index.html"><i class="fa-solid fa-user"></i></a>
+            <div id="toggle-theme" class="nav-icon flex inline row center" onclick="toggle_theme()"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 46.43 46.43">
+                    <defs>
+                        <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+                            <stop offset="0" stop-color="#2524ff" />
+                            <stop offset="1" stop-color="#dc25f9" />
+                        </linearGradient>
+                    </defs>
+                    <path id="Path_2" data-name="Path 2" d="M24.215,17.884a6.331,6.331,0,1,1-6.331,6.331,6.35,6.35,0,0,1,6.331-6.331m0-4.221A10.552,10.552,0,1,0,34.767,24.215,10.556,10.556,0,0,0,24.215,13.663ZM3.11,26.326H7.331a2.11,2.11,0,0,0,0-4.221H3.11a2.11,2.11,0,0,0,0,4.221Zm37.988,0H45.32a2.11,2.11,0,0,0,0-4.221H41.1a2.11,2.11,0,1,0,0,4.221ZM22.1,3.11V7.331a2.11,2.11,0,0,0,4.221,0V3.11a2.11,2.11,0,0,0-4.221,0Zm0,37.988V45.32a2.11,2.11,0,0,0,4.221,0V41.1a2.11,2.11,0,1,0-4.221,0ZM11.531,8.555a2.1,2.1,0,0,0-2.976,2.976l2.237,2.237a2.1,2.1,0,0,0,2.976-2.976ZM37.638,34.662a2.1,2.1,0,0,0-2.976,2.976L36.9,39.875A2.1,2.1,0,0,0,39.875,36.9Zm2.237-23.131A2.1,2.1,0,0,0,36.9,8.555l-2.237,2.237a2.1,2.1,0,0,0,2.976,2.976ZM13.768,37.638a2.1,2.1,0,1,0-2.976-2.976L8.555,36.9a2.1,2.1,0,0,0,2.976,2.976Z" transform="translate(-1 -1)" fill="url(#linear-gradient)" />
+                </svg></div>
+            <div id="expand-search" class="nav-icon flex inline row center" onclick="expand_search()"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 22.948 22.948">
+                    <defs>
+                        <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+                            <stop offset="0" stop-color="#2524ff" />
+                            <stop offset="1" stop-color="#dc25f9" />
+                        </linearGradient>
+                    </defs>
+                    <path id="Path_22" data-name="Path 22" d="M19.4,17.432H18.364L18,17.078a8.541,8.541,0,1,0-.918.918l.354.367V19.4l6.56,6.547,1.955-1.955Zm-7.872,0a5.9,5.9,0,1,1,5.9-5.9A5.9,5.9,0,0,1,11.528,17.432Z" transform="translate(-3 -3)" fill="url(#linear-gradient)" />
+                </svg></div>
+            <div id="expand-menu" class="nav-icon flex inline row center" onclick="expand_menu()"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="10" viewBox="0 0 26.667 6.667">
+                    <defs>
+                        <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+                            <stop offset="0" stop-color="#2524ff" />
+                            <stop offset="1" stop-color="#dc25f9" />
+                        </linearGradient>
+                    </defs>
+                    <path id="Path_77" data-name="Path 77" d="M7.333,10a3.333,3.333,0,1,0,3.333,3.333A3.343,3.343,0,0,0,7.333,10Zm20,0a3.333,3.333,0,1,0,3.333,3.333A3.343,3.343,0,0,0,27.333,10Zm-10,0a3.333,3.333,0,1,0,3.333,3.333A3.343,3.343,0,0,0,17.333,10Z" transform="translate(-4 -10)" fill="url(#linear-gradient)" />
+                </svg>
+                <nav id="nav-small-container" class="nav-small-container">
+                    <a class="nav-small-link" href="#token">Token</a><br>
+                    <a class="nav-small-link" href="#swap">Swap</a><br>
+                    <a class="nav-small-link" href="#nft">NFT</a><br>
+                    <a class="nav-small-link" href="#metaverse">Metaverse</a><br>
+                    <a class="nav-small-link" href="#game">Game</a>
+                </nav>
+            </div>
+            <form id="search-bar-closed" class="search-bar">
+                <label id="search-button-closed" class="search-button flex inline row center"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" viewBox="0 0 22.948 22.948">
+                        <defs>
+                            <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+                                <stop offset="0" stop-color="#2524ff" />
+                                <stop offset="1" stop-color="#dc25f9" />
+                            </linearGradient>
+                        </defs>
+                        <path id="Path_22" data-name="Path 22" d="M19.4,17.432H18.364L18,17.078a8.541,8.541,0,1,0-.918.918l.354.367V19.4l6.56,6.547,1.955-1.955Zm-7.872,0a5.9,5.9,0,1,1,5.9-5.9A5.9,5.9,0,0,1,11.528,17.432Z" transform="translate(-3 -3)" fill="url(#linear-gradient)" />
+                    </svg></label>
+                <input id="search-input-closed" type="text" class="search-input" placeholder="Search...">
+            </form>
+            <nav class="nav-link-container normal flex inline row center">
+                <a class="nav-link" href="#token">Token</a>
+                <a class="nav-link" href="#swap">Swap</a>
+                <a class="nav-link" href="#nft">NFT</a>
+                <a class="nav-link" href="#metaverse">Metaverse</a>
+                <a class="nav-link" href="#game">Game</a>
+            </nav>
+            <form id="search-bar" class="search-bar">
+                <label id="search-button" class="search-button flex inline row center"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" viewBox="0 0 22.948 22.948">
+                        <defs>
+                            <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+                                <stop offset="0" stop-color="#2524ff" />
+                                <stop offset="1" stop-color="#dc25f9" />
+                            </linearGradient>
+                        </defs>
+                        <path id="Path_22" data-name="Path 22" d="M19.4,17.432H18.364L18,17.078a8.541,8.541,0,1,0-.918.918l.354.367V19.4l6.56,6.547,1.955-1.955Zm-7.872,0a5.9,5.9,0,1,1,5.9-5.9A5.9,5.9,0,0,1,11.528,17.432Z" transform="translate(-3 -3)" fill="url(#linear-gradient)" />
+                    </svg></label>
+                <input id="search-input" type="text" class="search-input" placeholder="Search...">
+            </form>
+        </div>
+        <div class="placeholder"></div>
+        <nav class="nav-mobile">
+            <a id="expand-search-mobile" href="#up" class="nav-mobile-link flex inline row center"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="15.438" viewBox="0 0 25 15.438">
+                    <defs>
+                        <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+                            <stop offset="0" stop-color="#2524ff" />
+                            <stop offset="1" stop-color="#dc25f9" />
+                        </linearGradient>
+                    </defs>
+                    <path id="Path_328" data-name="Path 328" d="M18.5,8,6,20.5l2.938,2.937L18.5,13.9l9.563,9.542L31,20.5Z" transform="translate(-6 -8)" fill="url(#linear-gradient)" />
+                </svg></a>
+            <a id="toggle-theme-mobile" class="nav-mobile-link flex inline row center" onclick="toggle_theme_mobile()"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 46.43 46.43">
+                    <defs>
+                        <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+                            <stop offset="0" stop-color="#2524ff" />
+                            <stop offset="1" stop-color="#dc25f9" />
+                        </linearGradient>
+                    </defs>
+                    <path id="Path_2" data-name="Path 2" d="M24.215,17.884a6.331,6.331,0,1,1-6.331,6.331,6.35,6.35,0,0,1,6.331-6.331m0-4.221A10.552,10.552,0,1,0,34.767,24.215,10.556,10.556,0,0,0,24.215,13.663ZM3.11,26.326H7.331a2.11,2.11,0,0,0,0-4.221H3.11a2.11,2.11,0,0,0,0,4.221Zm37.988,0H45.32a2.11,2.11,0,0,0,0-4.221H41.1a2.11,2.11,0,1,0,0,4.221ZM22.1,3.11V7.331a2.11,2.11,0,0,0,4.221,0V3.11a2.11,2.11,0,0,0-4.221,0Zm0,37.988V45.32a2.11,2.11,0,0,0,4.221,0V41.1a2.11,2.11,0,1,0-4.221,0ZM11.531,8.555a2.1,2.1,0,0,0-2.976,2.976l2.237,2.237a2.1,2.1,0,0,0,2.976-2.976ZM37.638,34.662a2.1,2.1,0,0,0-2.976,2.976L36.9,39.875A2.1,2.1,0,0,0,39.875,36.9Zm2.237-23.131A2.1,2.1,0,0,0,36.9,8.555l-2.237,2.237a2.1,2.1,0,0,0,2.976,2.976ZM13.768,37.638a2.1,2.1,0,1,0-2.976-2.976L8.555,36.9a2.1,2.1,0,0,0,2.976,2.976Z" transform="translate(-1 -1)" fill="url(#linear-gradient)" />
+                </svg></a>
+            <a class="nav-mobile-link flex inline row center"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="28" viewBox="0 0 34.4 32.655">
+                    <defs>
+                        <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+                            <stop offset="0" stop-color="#2524ff" />
+                            <stop offset="1" stop-color="#dc25f9" />
+                        </linearGradient>
+                    </defs>
+                    <path id="Path_231" data-name="Path 231" d="M16.259,34.039v-9.8h7.478v9.8A1.922,1.922,0,0,0,25.607,36h5.609a1.922,1.922,0,0,0,1.87-1.961V20.315h3.178a.98.98,0,0,0,.617-1.706L21.251,3.845a1.819,1.819,0,0,0-2.505,0L3.116,18.609a.984.984,0,0,0,.617,1.706H6.911V34.039A1.922,1.922,0,0,0,8.781,36h5.609A1.922,1.922,0,0,0,16.259,34.039Z" transform="translate(-2.802 -3.345)" fill="url(#linear-gradient)" />
+                </svg></a>
+            <a id="expand-token-mobile" class="nav-mobile-link flex inline row center" onclick="expand_token_mobile()"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="30" viewBox="0 0 27 30">
+                    <defs>
+                        <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+                            <stop offset="0" stop-color="#2524ff" />
+                            <stop offset="1" stop-color="#dc25f9" />
+                        </linearGradient>
+                    </defs>
+                    <path id="Path_326" data-name="Path 326" d="M30,9.5,16.5,2,3,9.5v15L16.5,32,30,24.5ZM16.5,5.435l8.865,4.92-4.515,2.5a6.017,6.017,0,0,0-8.7,0l-4.515-2.5ZM15,27.74,6,22.745V12.89l4.695,2.61a5.41,5.41,0,0,0-.2,1.5A5.987,5.987,0,0,0,15,22.805ZM13.5,17a3,3,0,1,1,3,3A3.009,3.009,0,0,1,13.5,17ZM18,27.74V22.82a5.987,5.987,0,0,0,4.5-5.805,5.6,5.6,0,0,0-.195-1.515L27,12.89v9.855Z" transform="translate(-3 -2)" fill="url(#linear-gradient)" />
+                </svg></a>
+            <a id="expand-menu-mobile" class="nav-mobile-link flex inline row center" onclick="expand_menu_mobile()"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="10" viewBox="0 0 26.667 6.667">
+                    <defs>
+                        <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+                            <stop offset="0" stop-color="#2524ff" />
+                            <stop offset="1" stop-color="#dc25f9" />
+                        </linearGradient>
+                    </defs>
+                    <path id="Path_77" data-name="Path 77" d="M7.333,10a3.333,3.333,0,1,0,3.333,3.333A3.343,3.343,0,0,0,7.333,10Zm20,0a3.333,3.333,0,1,0,3.333,3.333A3.343,3.343,0,0,0,27.333,10Zm-10,0a3.333,3.333,0,1,0,3.333,3.333A3.343,3.343,0,0,0,17.333,10Z" transform="translate(-4 -10)" fill="url(#linear-gradient)" />
+                </svg></a>
+            <div id="nav-small-container-mobile" class="nav-small-container mobile">
+                <a class="nav-small-link" href="#token">Token</a><br>
+                <a class="nav-small-link" href="#swap">Swap</a><br>
+                <a class="nav-small-link" href="#nft">NFT</a><br>
+                <a class="nav-small-link" href="#metaverse">Metaverse</a><br>
+                <a class="nav-small-link" href="#game">Game</a>
+            </div>
+            <div id="nav-token-container-mobile" class="nav-small-container mobile">
+                <div class="icon token"></div>
+                <div class="token-title gradient-text"> Token Info</div><br>
+                <div class="token-item">
+                    <span class="gradient-text">BTK</span><br>
+                    Symbol
+                </div><br>
+                <div class="token-item">
+                    <span class="gradient-text" id="contract">0xe71bbfe86B493Db7F52f8219C4F527FaC97F934F</span> <i style="cursor: pointer" onclick="copy()" id="contract-button" class="fa-solid fa-gradient fa-copy"></i><br>
+                    Smart Contract Address
+                </div><br>
+                <div class="token-item">
+                    <span class="gradient-text">9</span><br>
+                    Decimals
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="body-box video">
+            <div class="title-box mobile flex column center">
+                <h1 class="main-title home">
+                    <div class="fix">Make Future on <span class="gradient-text">Bluetek</span></div>
+                </h1>
+                <h3 class="description-title home margin-20">Welcome to BlueTek, a virtual blockchain - based Metaverse set in space where you can explore play trade and socialize with other players</h3>
+            </div>
+            <aside class="image-section">
+                <div class="title-box desktop flex column center">
+                    <h1 class="main-title home">
+                        <div class="fix">Make Future on <span class="gradient-text">Bluetek</span></div>
+                    </h1>
+                    <h3 class="description-title home margin-20">Welcome to BlueTek, a virtual blockchain - based Metaverse set in space where you can explore play trade and socialize with other players</h3>
+                </div>
+                <video class="lazy" id="intro" poster="../video/video.jpg" loop autoplay playsinline muted>
+                    <source type="video/mp4" data-src="../video/video.mp4" />
+                </video>
+                <div id="mute"><i class="fa-solid fa-gradient fa-volume-xmark"></i><i style="display: none" class="fa-solid fa-gradient fa-volume-high"></i></div>
+            </aside>
+            <aside class="text-section">
+                <div class="full-container">
+                    <h2 class="container-title anim"><span class="container-title-border"></span><span class="gradient-text">About Bluetek</span></h2>
+                    <p class="container-description anim">The Blue Land Metaverse will be an ever-expanding interactive universe based in space, where NFT assets of satellites, living modules, custom spacecraft, virtual real estate, character modifications, and more all interact in a vast virtual economy. BlueTek token is the main currency of the game, it enables players to exchange NFTs, buy land and use specific DeFi products such as collateralization, buyback, and staking, mainly in the first phases of the game development</p>
+                    <div>
+                        <a class="image-button purple">Audit <i class="fa-solid fa-color fa-link"></i></a>
+                        <a class="image-button blue">Whitepaper <i class="fa-solid fa-color fa-file-pdf"></i></a>
+                    </div>
+                </div>
+            </aside>
+        </section>
+
+        <section id="token" class="body-box chart margin-70" style="min-height: unset">
+            <aside class="image-section flip anim">
+                <canvas id="token-chart"></canvas>
+            </aside>
+
+            <aside class="text-section padding-left">
+                <div class="full-container">
+                    <h2 class="container-title anim"><span class="container-title-border"></span><span class="gradient-text">Bluetek Token</span></h2>
+                    <h2 class="container-title-normal anim">About our token </h2>
+                    <p class="container-description anim">BlueTek token is the native currency in the game. It allows token holders to play, invest and also be part of the game</p>
+                    <div class="percentage-box anim">
+                        <div class="percentage-box-text">Team <span class="gradient-text extra-bold">15%</span></div>
+                        <div class="percentage-bar">
+                            <div class="percentage-bar-fill" style="width: 15%;background-color: rgba(255, 99, 132, 1);"></div>
+                        </div>
+                    </div>
+                    <div class="percentage-box anim">
+                        <div class="percentage-box-text">Play-To-Earn <span class="gradient-text extra-bold">8%</span></div>
+                        <div class="percentage-bar">
+                            <div class="percentage-bar-fill" style="width: 8%;background-color: rgba(54, 162, 235, 1);"></div>
+                        </div>
+                    </div>
+                    <div class="percentage-box anim">
+                        <div class="percentage-box-text">Ecosystem <span class="gradient-text extra-bold">12%</span></div>
+                        <div class="percentage-bar">
+                            <div class="percentage-bar-fill" style="width: 12%;background-color: rgba(255, 206, 86, 1);"></div>
+                        </div>
+                    </div>
+                    <div class="percentage-box anim">
+                        <div class="percentage-box-text">Pre Sale <span class="gradient-text extra-bold">10%</span></div>
+                        <div class="percentage-bar">
+                            <div class="percentage-bar-fill" style="width: 10%;background-color: rgba(75, 192, 192, 1);"></div>
+                        </div>
+                    </div>
+                    <div class="percentage-box anim">
+                        <div class="percentage-box-text">Public Sale <span class="gradient-text extra-bold">10%</span></div>
+                        <div class="percentage-bar">
+                            <div class="percentage-bar-fill" style="width: 10%;background-color: rgba(153, 102, 255, 1);"></div>
+                        </div>
+                    </div>
+                    <div class="percentage-box anim">
+                        <div class="percentage-box-text">Burning Event <span class="gradient-text extra-bold">45%</span></div>
+                        <div class="percentage-bar">
+                            <div class="percentage-bar-fill" style="width: 45%;background-color: rgba(255, 159, 64, 1);"></div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </section>
+
+        <section id="swap" class="body-box chart">
+            <aside class="text-section padding-right">
+                <div class="full-container">
+                    <h2 class="container-title anim"><span class="container-title-border"></span><span class="gradient-text">Trade With Blutek Swap Page</span></h2>
+                    <h2 class="container-title-normal anim">Blue Swap </h2>
+                    <p class="container-description anim">Swap, earn, and build on the leading decentralized crypto trading protocol. Trade any token on BNB Smart Chain in seconds, just by connecting your wallet.</p>
+                    <p class="container-description anim semi-bold margin-20"><i class="fa-regular fa-gradient fa-circle-check"></i> BlueSwap makes it easy to make your crypto work for you</p>
+                    <a href="../app/index.html" class="image-button purple margin-30 anim">Trade</a>
+                </div>
+            </aside>
+            <aside class="image-section flip anim" style="background-image: url('img/png/swap.png')"></aside>
+        </section>
+
+        <section id="nft" class="body-box chart">
+            <aside class="image-section anim" style="background-image: url('img/png/nft.png')"></aside>
+            <aside class="text-section padding-left">
+                <div class="full-container">
+                    <h2 class="container-title anim"><span class="container-title-border"></span><span class="gradient-text">Browse Blutek NFT Market</span></h2>
+                    <h3 class="container-title-normal anim">What are BlueTek NFTs?</h3>
+                    <p class="container-description anim">NFTs are unique digital assets created on the blockchain.They can be everything from gaming items and digital art, to sports collectibles and real-world assets. Game items could both be traded through the in-game marketplace and also the NFT marketplaces on other blockchains. It creates liquidity for the assets created through the game and also encourages more players to participate in building the BlueTek world.</p>
+                    <p class="container-description anim semi-bold feature-text"><i class="fa-regular fa-gradient fa-circle-check"></i> Create, distribute, and integrate NFTs</p>
+                    <p class="container-description anim semi-bold feature-text"><i class="fa-regular fa-gradient fa-circle-check"></i> Trade rare and unique NFTs</p>
+                    <p class="container-description anim semi-bold feature-text"><i class="fa-regular fa-gradient fa-circle-check"></i> Build NFT games , smart art ,</p>
+                    <p class="container-description anim semi-bold feature-text"><i class="fa-regular fa-gradient fa-circle-check"></i> Reimagine gaming assets</p>
+                    <p class="container-description anim semi-bold feature-text"><i class="fa-regular fa-gradient fa-circle-check"></i> Embrace play-to-earn</p>
+                    <p class="container-description anim semi-bold feature-text"><i class="fa-regular fa-gradient fa-circle-check"></i> Mint avatars</p>
+                    <p class="container-description anim semi-bold feature-text"><i class="fa-regular fa-gradient fa-circle-check"></i> Tokenize anything</p>
+                    <a class="image-button blue margin-30 anim" href="../nft/index.html">Browse</a>
+                </div>
+            </aside>
+        </section>
+
+        <section id="metaverse" class="body-box chart">
+            <aside class="text-section padding-right">
+                <div class="full-container">
+                    <h2 class="container-title anim"><span class="container-title-border"></span><span class="gradient-text">Enter Bluetek Metaverse</span></h2>
+                    <h3 class="container-title-normal anim">Blue Land</h3>
+                    <p class="container-description anim">The Metaverse is the bridge between physical and virtual worlds within the decentralised and open source virtual world. Cryptographic protocols will emerge for managing digital value, for example, digital art, real estate & advertising space. The BlueTek Metaverse is made up of LANDS , that are parts of the world, owned by players to create and monetize experiences. There will only ever be 100,000 LANDS available, which can be used to host games, build multiplayer experiences, create housing, or offer social experiences to the community</p>
+                    <p class="container-description anim semi-bold feature-text"><i class="fa-regular fa-gradient fa-circle-check"></i> Host contests and events</p>
+                    <p class="container-description anim semi-bold feature-text"><i class="fa-regular fa-gradient fa-circle-check"></i> Monetize ASSETS and experiences</p>
+                    <p class="container-description anim semi-bold feature-text"><i class="fa-regular fa-gradient fa-circle-check"></i> Play games that you or others create</p>
+                    <p class="container-description anim semi-bold feature-text"><i class="fa-regular fa-gradient fa-circle-check"></i> Vote in the metaverse governance</p>
+                    <p class="container-description anim semi-bold feature-text"><i class="fa-regular fa-gradient fa-circle-check"></i> Stake BlueTek to earn and customize assets</p>
+                    <a href="../meta/index.html" class="image-button purple margin-30 anim">Enter</a>
+                </div>
+            </aside>
+            <aside class="image-section flip anim" style="background-image: url('img/png/metaverse.png')"></aside>
+        </section>
+
+        <section id="game" class="body-box chart">
+            <aside class="image-section anim" style="background-image: url('img/png/game.png')"></aside>
+            <aside class="text-section padding-left">
+                <div class="full-container">
+                    <h2 class="container-title anim"><span class="container-title-border"></span><span class="gradient-text">Play Bluetek Blockchain Game</span></h2>
+                    <h3 class="container-title-normal anim">Making Blockchain Games You'll Actually Want to Play</h3>
+                    <p class="container-description anim">BlueTek is a multiplayer builder game, where anyone can buy and own virtual islands, collect and build exciting items and meet new friends. Inspired by successful games such as Animal Crossing , the game combines the best of the two worlds a fun narrative for regular players who want to enjoy the gameplay experience as well as an ecosystem for players who want to collect and trade NFT:s, even if they have no idea what an NFT is.</p>
+                    <p class="container-description anim semi-bold margin-20"><i class="fa-regular fa-gradient fa-circle-check"></i> Play To Earn</p>
+                    <p class="container-description anim semi-bold margin-20"><i class="fa-regular fa-gradient fa-circle-check"></i> Virtual Lands</p>
+                    <p class="container-description anim semi-bold margin-20"><i class="fa-regular fa-gradient fa-circle-check"></i> in-Game marketplace</p>
+                    <p class="container-description anim semi-bold margin-20"><i class="fa-regular fa-gradient fa-circle-check"></i> in-Game items</p>
+                    <p class="container-description anim semi-bold margin-20"><i class="fa-regular fa-gradient fa-circle-check"></i> In-Game Assets</p>
+                    <p class="container-description anim semi-bold margin-20"><i class="fa-regular fa-gradient fa-circle-check"></i> Community-created events</p>
+                    <a class="image-button blue margin-30 anim" href="../game/index.html">Play</a>
+                </div>
+            </aside>
+        </section>
+
+        <h1 id="roadmap" class="main-title extra-bold">
+            <div class="fix">Our <span class="gradient-text">Roadmap</span></div>
+        </h1>
+
+        <div class="margin-50 swiper road-map-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="data road-map-box anim">
+                        <h2 class="road-map-title">Augue vesulum neque </h2>
+                        <h3 class="road-map-item"><i class="fa-regular fa-gradient fa-circle-check"></i> Token Development <br> -- Create Socials <span class="gradient-text">Nov 2021</span></h3>
+                        <h3 class="road-map-item"><i class="fa-regular fa-gradient fa-circle-check"></i> Website Beta Launch <br> -- Airdrop Launch <span class="gradient-text">Dec 2021</span></h3>
+                        <h3 class="road-map-item"><i class="fa-regular fa-gradient fa-circle-check"></i> Pre-sale Launch <br> -- Contract Audit <span class="gradient-text">Jan 2022</span></h3>
+                        <h3 class="road-map-item"><i class="fa-regular fa-gradient fa-circle"></i> Website Upgrade <br> -- Publish Whitepaper <span class="gradient-text">Feb 2022</span></h3>
+                        <div class="road-map-status gradient-text">done</div>
+                    </div>
+
+                    <div class="data road-map-next anim"><i class="fa-solid fa-gradient fa-angle-right"></i></div>
+                    <div class="data road-map-box anim">
+                        <h2 class="road-map-title">Dictum dapibus </h2>
+                        <h3 class="road-map-item"><i class="fa-regular fa-gradient fa-circle"></i> Launch on 2 CEXs <br> -- Wallet Development <span class="gradient-text">Mar 2022</span></h3>
+                        <h3 class="road-map-item"><i class="fa-regular fa-gradient fa-circle"></i> Listing on 2 CEXs <br> -- Release Wallet Beta <span class="gradient-text">Apr 2022</span></h3>
+                        <h3 class="road-map-item"><i class="fa-regular fa-gradient fa-circle"></i> Listing on 2 CEXs <br> -- Launch NFT Market <span class="gradient-text">May 2022</span></h3>
+                        <h3 class="road-map-item"><i class="fa-regular fa-gradient fa-circle"></i> Wallet Final version <br> -- Release Virtual Land <span class="gradient-text">June 2022</span></h3>
+                        <div class="road-map-status gradient-text">pending</div>
+                    </div>
+                    <div class="data road-map-next anim"><i class="fa-solid fa-gradient fa-angle-right"></i></div>
+                    <div class="data road-map-box anim">
+                        <h2 class="road-map-title">Suscipit arcu faucibus </h2>
+                        <h3 class="road-map-item"><i class="fa-regular fa-gradient fa-circle"></i> Launch SWAP & DEX <br> -- Cross-Chain DeFi <span class="gradient-text">July 2022</span></h3>
+                        <h3 class="road-map-item"><i class="fa-regular fa-gradient fa-circle"></i> Launch First Game <br> -- Launch Social Platform <span class="gradient-text">Aug 2022</span></h3>
+                        <h3 class="road-map-item"><i class="fa-regular fa-gradient fa-circle"></i> Listing on More CEXs <br> -- Grand Prix Contest <span class="gradient-text">Sep 2022</span></h3>
+                        <h3 class="road-map-item"><i class="fa-regular fa-gradient fa-circle"></i> Launch Global Store <br> -- Opening branches <span class="gradient-text">Oct 2022</span></h3>
+                        <div class="road-map-status gradient-text">pending</div>
+                    </div>
+                    <div class="data road-map-next anim"><i class="fa-solid fa-gradient fa-angle-right"></i></div>
+                    <div class="data road-map-box anim">
+                        <h2 class="road-map-title">Lobortis nec aliquam </h2>
+                        <h3 class="road-map-item"><i class="fa-regular fa-gradient fa-circle"></i> Launch Transit App <span class="gradient-text">Nov 2022</span></h3>
+                        <h3 class="road-map-item"><i class="fa-regular fa-gradient fa-circle"></i> Launch CEX <span class="gradient-text">Dec 2022</span></h3>
+                        <h3 class="road-map-item"><i class="fa-regular fa-gradient fa-circle"></i> Launch Wallet Token <span class="gradient-text">Jan 2023</span></h3>
+                        <h3 class="road-map-item"><i class="fa-regular fa-gradient fa-circle"></i> BIG Announcement <span class="gradient-text">Feb 2023</span></h3>
+                        <div class="road-map-status gradient-text">pending</div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-scrollbar"></div>
+        </div>
+
+        <section id="contact" class="body-box chart contact">
+            <aside class="image-section">
+                <div class="full-container center">
+                    <input type="text" placeholder="Your name" class="contact-input anim">
+                    <input type="text" placeholder="Your email" class="contact-input anim">
+                    <textarea placeholder="Your message" class="contact-textarea anim"></textarea>
+                    <button class="hero-button contact anim">Send</button>
+                </div>
+            </aside>
+            <aside class="text-section padding-left flip" style="vertical-align: unset">
+                <div class="full-container">
+                    <h2 class="container-title anim"><span class="container-title-border"></span><span class="gradient-text">Contact Bluetek</span></h2>
+                    <h3 class="container-title-normal anim">Any Questions or Remarks?</h3>
+                    <p class="container-description anim">
+                        Please contact us in Telegram, instagram, Twitter or Email for more information or help. </p>
+                    <p class="road-map-item margin-30 anim"><i style="margin-right: 5px" class="fa-solid fa-gradient fa-phone"></i> (223)980-7383</p>
+                    <p class="road-map-item anim"><i style="margin-right: 5px" class="fa-solid fa-gradient fa-envelope"></i> Support@btktoken.info</p>
+                </div>
+            </aside>
+        </section>
+    </main>
+
+    <footer class="footer-bar">
+        <div class="social-link-container flex inline column center">
+            <a class="social-link" target="_blank" href=""><i class="fa-brands fa-gradient fa-twitter"></i></a>
+            <a class="social-link" target="_blank" href=""><i class="fa-brands fa-gradient fa-instagram"></i></a>
+            <a class="social-link" target="_blank" href=""><i class="fa-brands fa-gradient fa-linkedin"></i></a>
+            <a class="social-link" target="_blank" href=""><i class="fa-brands fa-gradient fa-reddit-alien"></i></a>
+            <a class="social-link" target="_blank" href=""><i class="fa-brands fa-gradient fa-medium"></i></a>
+            <a class="social-link" target="_blank" href=""><i class="fa-brands fa-gradient fa-telegram"></i></a>
+        </div>
+
+        <nav class="nav-link-container flex inline row center">
+            <a class="nav-link" href="#token">Token</a>
+            <a class="nav-link" href="#swap">Swap</a>
+            <a class="nav-link" href="#nft">NFT</a>
+            <a class="nav-link" href="#metaverse">Metaverse</a>
+            <a class="nav-link" href="#game">Game</a>
+        </nav>
+
+        <div class="copy-right"><i class="fa-regular fa-gradient fa-copyright"></i> 2022 <a href="../home/index.html" class="gradient-text">BlueTek</a> All Right Reserved</div>
+    </footer>
+</body>
+
+</html>

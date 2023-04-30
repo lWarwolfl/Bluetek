@@ -1,0 +1,92 @@
+.setting-button{
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px var(--box-shadow-color);
+    background-image: var(--gradient-main-lightest);
+    background-size: 210% 210%;
+    background-position: 100% 105%;
+}
+.setting-button i{
+    font-size: 20px;
+    margin-top: 1px;
+}
+.setting-button.add i{
+    margin-left: 5px;
+}
+.setting-button:hover{
+    background-position: 30% 105%;
+    box-shadow: 0 5px 8px var(--box-shadow-color);
+}
+.setting-button:hover i{
+    transform: rotate(180deg);
+}
+.setting-button.add{
+    width: min-content;
+    white-space: nowrap;
+    padding: 0 15px;
+}
+.setting-box{
+    position: absolute;
+    height: min-content;
+    width: 300px;
+    margin-top: 10px;
+    right: 0;
+    padding: 20px;
+    border-radius: 20px;
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--font-color);
+    background-image: var(--gradient-main-lighter);
+    background-size: 210% 210%;
+    background-position: 100% 105%;
+    box-shadow: 0 2px 5px var(--box-shadow-color);
+    text-align: left;
+    z-index: 3000;
+}
+.setting-input{
+    height: 100%;
+    width: 100%;
+    text-align: right;
+    padding-left: 20px;
+    border-radius: 5px 20px 20px 20px;
+    letter-spacing: 0.5px;
+    font-family: var(--primary-font);
+    font-weight: 400;
+    color: var(--font-color);
+    background-image: var(--gradient-main-lightest);
+    box-shadow: 0 2px 5px var(--box-shadow-color);
+    background-size: 210% 210%;
+    background-position: 100% 105%;
+}
+.setting-input:hover,.setting-input:focus{
+    background-position: 30% 105%;
+    box-shadow: 0 5px 8px var(--box-shadow-color);
+}
+.setting-input.min{
+    padding-right: 75px;
+}
+.setting-input.slip{
+    padding-right: 30px;
+}
+.input-text{
+    position: absolute;
+    display: inline-block;
+    right: 10px;
+    font-size: 16px;
+    top: 0;
+    white-space: nowrap;
+    height: 30px;
+    line-height: 30px;
+    font-family: var(--primary-font);
+    font-weight: 500;
+}
